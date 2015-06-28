@@ -1,0 +1,13 @@
+module Gtk {
+    header "/usr/local/include/gtk-3.0/gtk/gtk.h"
+    
+    export *
+}
+
+module SwiftGtk {
+    module Private {
+        header "SwiftGtk-Bridging.h"
+        
+        export *
+    }
+}

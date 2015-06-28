@@ -10,6 +10,32 @@
 		78E163DF1B405B3A008A7CEC /* SwiftGtk.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E163DE1B405B3A008A7CEC /* SwiftGtk.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		78E163E61B405B3A008A7CEC /* SwiftGtk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E163DB1B405B3A008A7CEC /* SwiftGtk.framework */; };
 		78E163EB1B405B3A008A7CEC /* SwiftGtkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E163EA1B405B3A008A7CEC /* SwiftGtkTests.swift */; };
+		78E163FC1B405BB3008A7CEC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E163FB1B405BB3008A7CEC /* main.swift */; };
+		78E1640C1B405C3E008A7CEC /* libgailutil-3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E164001B405C3E008A7CEC /* libgailutil-3.0.dylib */; };
+		78E1640D1B405C3E008A7CEC /* libgdk-3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E164011B405C3E008A7CEC /* libgdk-3.0.dylib */; };
+		78E1640E1B405C3E008A7CEC /* libgtk-3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E164021B405C3E008A7CEC /* libgtk-3.0.dylib */; };
+		78E1640F1B405C3E008A7CEC /* libpango-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E164031B405C3E008A7CEC /* libpango-1.0.0.dylib */; };
+		78E164101B405C3E008A7CEC /* libpixman-1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E164041B405C3E008A7CEC /* libpixman-1.0.dylib */; };
+		78E164111B405C3E008A7CEC /* libatk-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E164051B405C3E008A7CEC /* libatk-1.0.0.dylib */; };
+		78E164121B405C3E008A7CEC /* libgdk_pixbuf-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E164061B405C3E008A7CEC /* libgdk_pixbuf-2.0.0.dylib */; };
+		78E164131B405C3E008A7CEC /* libgio-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E164071B405C3E008A7CEC /* libgio-2.0.0.dylib */; };
+		78E164141B405C3E008A7CEC /* libglib-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E164081B405C3E008A7CEC /* libglib-2.0.0.dylib */; };
+		78E164151B405C3E008A7CEC /* libgmodule-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E164091B405C3E008A7CEC /* libgmodule-2.0.0.dylib */; };
+		78E164161B405C3E008A7CEC /* libgobject-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E1640A1B405C3E008A7CEC /* libgobject-2.0.0.dylib */; };
+		78E164171B405C3E008A7CEC /* libgthread-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E1640B1B405C3E008A7CEC /* libgthread-2.0.0.dylib */; };
+		78E164281B405CF6008A7CEC /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E1641C1B405CF6008A7CEC /* Application.swift */; };
+		78E164291B405CF6008A7CEC /* ApplicationWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E1641D1B405CF6008A7CEC /* ApplicationWindow.swift */; };
+		78E1642A1B405CF6008A7CEC /* Bin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E1641E1B405CF6008A7CEC /* Bin.swift */; };
+		78E1642B1B405CF6008A7CEC /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E1641F1B405CF6008A7CEC /* Box.swift */; };
+		78E1642C1B405CF6008A7CEC /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E164201B405CF6008A7CEC /* Button.swift */; };
+		78E1642D1B405CF6008A7CEC /* ButtonBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E164211B405CF6008A7CEC /* ButtonBox.swift */; };
+		78E1642E1B405CF6008A7CEC /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E164221B405CF6008A7CEC /* Container.swift */; };
+		78E1642F1B405CF6008A7CEC /* SwiftGtk-Bridging.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E164231B405CF6008A7CEC /* SwiftGtk-Bridging.m */; };
+		78E164301B405CF6008A7CEC /* SwiftGtk-Bridging.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E164241B405CF6008A7CEC /* SwiftGtk-Bridging.h */; };
+		78E164311B405CF6008A7CEC /* Signals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E164251B405CF6008A7CEC /* Signals.swift */; };
+		78E164321B405CF6008A7CEC /* Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E164261B405CF6008A7CEC /* Widget.swift */; };
+		78E164331B405CF6008A7CEC /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E164271B405CF6008A7CEC /* Window.swift */; };
+		78E164441B407AD1008A7CEC /* SwiftGtk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E163DB1B405B3A008A7CEC /* SwiftGtk.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,7 +46,26 @@
 			remoteGlobalIDString = 78E163DA1B405B3A008A7CEC;
 			remoteInfo = SwiftGtk;
 		};
+		78E164421B407ACE008A7CEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78E163D21B405B3A008A7CEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78E163DA1B405B3A008A7CEC;
+			remoteInfo = SwiftGtk;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		78E163F71B405BB3008A7CEC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		78E163DB1B405B3A008A7CEC /* SwiftGtk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftGtk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +74,34 @@
 		78E163E51B405B3A008A7CEC /* SwiftGtkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftGtkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78E163EA1B405B3A008A7CEC /* SwiftGtkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGtkTests.swift; sourceTree = "<group>"; };
 		78E163EC1B405B3A008A7CEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78E163F91B405BB3008A7CEC /* SwiftGtkDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftGtkDemo; sourceTree = BUILT_PRODUCTS_DIR; };
+		78E163FB1B405BB3008A7CEC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		78E164001B405C3E008A7CEC /* libgailutil-3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgailutil-3.0.dylib"; path = "/usr/local/Cellar/gtk+3/3.16.2/lib/libgailutil-3.0.dylib"; sourceTree = "<absolute>"; };
+		78E164011B405C3E008A7CEC /* libgdk-3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgdk-3.0.dylib"; path = "/usr/local/Cellar/gtk+3/3.16.2/lib/libgdk-3.0.dylib"; sourceTree = "<absolute>"; };
+		78E164021B405C3E008A7CEC /* libgtk-3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgtk-3.0.dylib"; path = "/usr/local/Cellar/gtk+3/3.16.2/lib/libgtk-3.0.dylib"; sourceTree = "<absolute>"; };
+		78E164031B405C3E008A7CEC /* libpango-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libpango-1.0.0.dylib"; path = "/usr/local/Cellar/pango/1.36.8/lib/libpango-1.0.0.dylib"; sourceTree = "<absolute>"; };
+		78E164041B405C3E008A7CEC /* libpixman-1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libpixman-1.0.dylib"; path = "/usr/local/Cellar/pixman/0.32.6/lib/libpixman-1.0.dylib"; sourceTree = "<absolute>"; };
+		78E164051B405C3E008A7CEC /* libatk-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libatk-1.0.0.dylib"; path = "/usr/local/Cellar/atk/2.16.0/lib/libatk-1.0.0.dylib"; sourceTree = "<absolute>"; };
+		78E164061B405C3E008A7CEC /* libgdk_pixbuf-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgdk_pixbuf-2.0.0.dylib"; path = "/usr/local/Cellar/gdk-pixbuf/2.30.8/lib/libgdk_pixbuf-2.0.0.dylib"; sourceTree = "<absolute>"; };
+		78E164071B405C3E008A7CEC /* libgio-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgio-2.0.0.dylib"; path = "/usr/local/Cellar/glib/2.44.0/lib/libgio-2.0.0.dylib"; sourceTree = "<absolute>"; };
+		78E164081B405C3E008A7CEC /* libglib-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libglib-2.0.0.dylib"; path = "/usr/local/Cellar/glib/2.44.0/lib/libglib-2.0.0.dylib"; sourceTree = "<absolute>"; };
+		78E164091B405C3E008A7CEC /* libgmodule-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgmodule-2.0.0.dylib"; path = "/usr/local/Cellar/glib/2.44.0/lib/libgmodule-2.0.0.dylib"; sourceTree = "<absolute>"; };
+		78E1640A1B405C3E008A7CEC /* libgobject-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgobject-2.0.0.dylib"; path = "/usr/local/Cellar/glib/2.44.0/lib/libgobject-2.0.0.dylib"; sourceTree = "<absolute>"; };
+		78E1640B1B405C3E008A7CEC /* libgthread-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgthread-2.0.0.dylib"; path = "/usr/local/Cellar/glib/2.44.0/lib/libgthread-2.0.0.dylib"; sourceTree = "<absolute>"; };
+		78E1641C1B405CF6008A7CEC /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		78E1641D1B405CF6008A7CEC /* ApplicationWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationWindow.swift; sourceTree = "<group>"; };
+		78E1641E1B405CF6008A7CEC /* Bin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bin.swift; sourceTree = "<group>"; };
+		78E1641F1B405CF6008A7CEC /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		78E164201B405CF6008A7CEC /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		78E164211B405CF6008A7CEC /* ButtonBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonBox.swift; sourceTree = "<group>"; };
+		78E164221B405CF6008A7CEC /* Container.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		78E164231B405CF6008A7CEC /* SwiftGtk-Bridging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SwiftGtk-Bridging.m"; sourceTree = "<group>"; };
+		78E164241B405CF6008A7CEC /* SwiftGtk-Bridging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SwiftGtk-Bridging.h"; sourceTree = "<group>"; };
+		78E164251B405CF6008A7CEC /* Signals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signals.swift; sourceTree = "<group>"; };
+		78E164261B405CF6008A7CEC /* Widget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Widget.swift; sourceTree = "<group>"; };
+		78E164271B405CF6008A7CEC /* Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
+		78E1643E1B4066CE008A7CEC /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		78E164491B40876F008A7CEC /* module.private.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.private.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +109,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78E1640C1B405C3E008A7CEC /* libgailutil-3.0.dylib in Frameworks */,
+				78E1640D1B405C3E008A7CEC /* libgdk-3.0.dylib in Frameworks */,
+				78E1640E1B405C3E008A7CEC /* libgtk-3.0.dylib in Frameworks */,
+				78E1640F1B405C3E008A7CEC /* libpango-1.0.0.dylib in Frameworks */,
+				78E164101B405C3E008A7CEC /* libpixman-1.0.dylib in Frameworks */,
+				78E164111B405C3E008A7CEC /* libatk-1.0.0.dylib in Frameworks */,
+				78E164121B405C3E008A7CEC /* libgdk_pixbuf-2.0.0.dylib in Frameworks */,
+				78E164131B405C3E008A7CEC /* libgio-2.0.0.dylib in Frameworks */,
+				78E164141B405C3E008A7CEC /* libglib-2.0.0.dylib in Frameworks */,
+				78E164151B405C3E008A7CEC /* libgmodule-2.0.0.dylib in Frameworks */,
+				78E164161B405C3E008A7CEC /* libgobject-2.0.0.dylib in Frameworks */,
+				78E164171B405C3E008A7CEC /* libgthread-2.0.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +132,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		78E163F61B405BB3008A7CEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78E164441B407AD1008A7CEC /* SwiftGtk.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,6 +148,7 @@
 			children = (
 				78E163DD1B405B3A008A7CEC /* SwiftGtk */,
 				78E163E91B405B3A008A7CEC /* SwiftGtkTests */,
+				78E163FA1B405BB3008A7CEC /* SwiftGtkDemo */,
 				78E163DC1B405B3A008A7CEC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +158,7 @@
 			children = (
 				78E163DB1B405B3A008A7CEC /* SwiftGtk.framework */,
 				78E163E51B405B3A008A7CEC /* SwiftGtkTests.xctest */,
+				78E163F91B405BB3008A7CEC /* SwiftGtkDemo */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,8 +166,15 @@
 		78E163DD1B405B3A008A7CEC /* SwiftGtk */ = {
 			isa = PBXGroup;
 			children = (
+				78E164451B407BBB008A7CEC /* Widgets */,
+				78E164231B405CF6008A7CEC /* SwiftGtk-Bridging.m */,
+				78E164241B405CF6008A7CEC /* SwiftGtk-Bridging.h */,
+				78E164251B405CF6008A7CEC /* Signals.swift */,
+				78E164181B405C44008A7CEC /* Libraries */,
 				78E163DE1B405B3A008A7CEC /* SwiftGtk.h */,
 				78E163E01B405B3A008A7CEC /* Info.plist */,
+				78E1643E1B4066CE008A7CEC /* module.modulemap */,
+				78E164491B40876F008A7CEC /* module.private.modulemap */,
 			);
 			path = SwiftGtk;
 			sourceTree = "<group>";
@@ -86,6 +188,50 @@
 			path = SwiftGtkTests;
 			sourceTree = "<group>";
 		};
+		78E163FA1B405BB3008A7CEC /* SwiftGtkDemo */ = {
+			isa = PBXGroup;
+			children = (
+				78E163FB1B405BB3008A7CEC /* main.swift */,
+			);
+			path = SwiftGtkDemo;
+			sourceTree = "<group>";
+		};
+		78E164181B405C44008A7CEC /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				78E164001B405C3E008A7CEC /* libgailutil-3.0.dylib */,
+				78E164011B405C3E008A7CEC /* libgdk-3.0.dylib */,
+				78E164021B405C3E008A7CEC /* libgtk-3.0.dylib */,
+				78E164031B405C3E008A7CEC /* libpango-1.0.0.dylib */,
+				78E164041B405C3E008A7CEC /* libpixman-1.0.dylib */,
+				78E164051B405C3E008A7CEC /* libatk-1.0.0.dylib */,
+				78E164061B405C3E008A7CEC /* libgdk_pixbuf-2.0.0.dylib */,
+				78E164071B405C3E008A7CEC /* libgio-2.0.0.dylib */,
+				78E164081B405C3E008A7CEC /* libglib-2.0.0.dylib */,
+				78E164091B405C3E008A7CEC /* libgmodule-2.0.0.dylib */,
+				78E1640A1B405C3E008A7CEC /* libgobject-2.0.0.dylib */,
+				78E1640B1B405C3E008A7CEC /* libgthread-2.0.0.dylib */,
+			);
+			name = Libraries;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		78E164451B407BBB008A7CEC /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				78E1641C1B405CF6008A7CEC /* Application.swift */,
+				78E1641D1B405CF6008A7CEC /* ApplicationWindow.swift */,
+				78E1641E1B405CF6008A7CEC /* Bin.swift */,
+				78E1641F1B405CF6008A7CEC /* Box.swift */,
+				78E164201B405CF6008A7CEC /* Button.swift */,
+				78E164211B405CF6008A7CEC /* ButtonBox.swift */,
+				78E164221B405CF6008A7CEC /* Container.swift */,
+				78E164261B405CF6008A7CEC /* Widget.swift */,
+				78E164271B405CF6008A7CEC /* Window.swift */,
+			);
+			name = Widgets;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -94,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78E163DF1B405B3A008A7CEC /* SwiftGtk.h in Headers */,
+				78E164301B405CF6008A7CEC /* SwiftGtk-Bridging.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,12 +283,31 @@
 			productReference = 78E163E51B405B3A008A7CEC /* SwiftGtkTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		78E163F81B405BB3008A7CEC /* SwiftGtkDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78E163FD1B405BB3008A7CEC /* Build configuration list for PBXNativeTarget "SwiftGtkDemo" */;
+			buildPhases = (
+				78E163F51B405BB3008A7CEC /* Sources */,
+				78E163F61B405BB3008A7CEC /* Frameworks */,
+				78E163F71B405BB3008A7CEC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78E164431B407ACE008A7CEC /* PBXTargetDependency */,
+			);
+			name = SwiftGtkDemo;
+			productName = SwiftGtkDemo;
+			productReference = 78E163F91B405BB3008A7CEC /* SwiftGtkDemo */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		78E163D21B405B3A008A7CEC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Tomas Linhart";
 				TargetAttributes = {
@@ -149,6 +315,9 @@
 						CreatedOnToolsVersion = 7.0;
 					};
 					78E163E41B405B3A008A7CEC = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					78E163F81B405BB3008A7CEC = {
 						CreatedOnToolsVersion = 7.0;
 					};
 				};
@@ -167,6 +336,7 @@
 			targets = (
 				78E163DA1B405B3A008A7CEC /* SwiftGtk */,
 				78E163E41B405B3A008A7CEC /* SwiftGtkTests */,
+				78E163F81B405BB3008A7CEC /* SwiftGtkDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -193,6 +363,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78E1642C1B405CF6008A7CEC /* Button.swift in Sources */,
+				78E1642D1B405CF6008A7CEC /* ButtonBox.swift in Sources */,
+				78E164311B405CF6008A7CEC /* Signals.swift in Sources */,
+				78E164291B405CF6008A7CEC /* ApplicationWindow.swift in Sources */,
+				78E1642B1B405CF6008A7CEC /* Box.swift in Sources */,
+				78E1642E1B405CF6008A7CEC /* Container.swift in Sources */,
+				78E1642A1B405CF6008A7CEC /* Bin.swift in Sources */,
+				78E164321B405CF6008A7CEC /* Widget.swift in Sources */,
+				78E1642F1B405CF6008A7CEC /* SwiftGtk-Bridging.m in Sources */,
+				78E164281B405CF6008A7CEC /* Application.swift in Sources */,
+				78E164331B405CF6008A7CEC /* Window.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +385,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		78E163F51B405BB3008A7CEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78E163FC1B405BB3008A7CEC /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -211,6 +400,11 @@
 			isa = PBXTargetDependency;
 			target = 78E163DA1B405B3A008A7CEC /* SwiftGtk */;
 			targetProxy = 78E163E71B405B3A008A7CEC /* PBXContainerItemProxy */;
+		};
+		78E164431B407ACE008A7CEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78E163DA1B405B3A008A7CEC /* SwiftGtk */;
+			targetProxy = 78E164421B407ACE008A7CEC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -302,36 +496,73 @@
 		78E163F01B405B3A008A7CEC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_VERSION = A;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/cairo,
+					"/usr/local/include/gtk-3.0",
+					"/usr/local/include/glib-2.0/**",
+					"/usr/local/include/pango-1.0",
+					"/usr/local/include/gdk-pixbuf-2.0",
+					"/usr/local/include/atk-1.0",
+					"/usr/local/lib/glib-2.0/include",
+				);
 				INFOPLIST_FILE = SwiftGtk/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/lib,
+				);
+				MODULEMAP_PRIVATE_FILE = "$(SRCROOT)/SwiftGtk/module.private.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tomaslinhart.SwiftGtk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/SwiftGtk/";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		78E163F11B405B3A008A7CEC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_VERSION = A;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/cairo,
+					"/usr/local/include/gtk-3.0",
+					"/usr/local/include/glib-2.0/**",
+					"/usr/local/include/pango-1.0",
+					"/usr/local/include/gdk-pixbuf-2.0",
+					"/usr/local/include/atk-1.0",
+					"/usr/local/lib/glib-2.0/include",
+				);
 				INFOPLIST_FILE = SwiftGtk/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/lib,
+				);
+				MODULEMAP_PRIVATE_FILE = "$(SRCROOT)/SwiftGtk/module.private.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tomaslinhart.SwiftGtk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/SwiftGtk/";
 			};
 			name = Release;
 		};
@@ -357,6 +588,20 @@
 			};
 			name = Release;
 		};
+		78E163FE1B405BB3008A7CEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		78E163FF1B405BB3008A7CEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -376,6 +621,7 @@
 				78E163F11B405B3A008A7CEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		78E163F21B405B3A008A7CEC /* Build configuration list for PBXNativeTarget "SwiftGtkTests" */ = {
 			isa = XCConfigurationList;
@@ -384,6 +630,16 @@
 				78E163F41B405B3A008A7CEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78E163FD1B405BB3008A7CEC /* Build configuration list for PBXNativeTarget "SwiftGtkDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78E163FE1B405BB3008A7CEC /* Debug */,
+				78E163FF1B405BB3008A7CEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

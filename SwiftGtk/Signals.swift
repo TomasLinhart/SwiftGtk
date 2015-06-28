@@ -1,0 +1,29 @@
+//
+//  Copyright © 2015 Tomas Linhart. All rights reserved.
+//
+
+import Foundation
+import Gtk
+import SwiftGtk.Private
+
+enum ConnectFlags {
+    case After
+    case Swapped
+    
+    private func toGConnectFlags() -> GConnectFlags {
+        switch self {
+        case .After:
+            return G_CONNECT_AFTER
+        case .Swapped:
+            return G_CONNECT_SWAPPED
+        }
+    }
+}
+
+func connectSignal<T>(instance: UnsafeMutablePointer<T>, name: String, data: UnsafeMutablePointer<Void>, connectFlags: ConnectFlags = .After, handler: @convention(c) (UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>) -> Void) -> gulong {
+    return g_signal_connect_data_swift(instance, name, handler, data, nil, connectFlags.toGConnectFlags())
+}
+
+func connectSignal<T>(instance: UnsafeMutablePointer<T>, name: String, connectFlags: ConnectFlags = .After, handler: @convention(c) (UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>) -> Void) {
+    g_signal_connect_data_swift(instance, name, handler, nil, nil, connectFlags.toGConnectFlags())
+}
