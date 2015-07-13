@@ -17,9 +17,8 @@ public class Application {
     public func run(windowCallback: (window: ApplicationWindow) -> Void) -> Int {
         self.windowCallback = windowCallback
         
-        var selfCopy = self
-        connectSignal(applicationPointer, name: "activate", data: &selfCopy) { sender, data in
-            let app = UnsafeMutablePointer<Application>(data).memory
+        connectSignal(applicationPointer, name: "activate", data: unsafeAddressOf(self)) { sender, data in
+            let app = unsafeBitCast(data, Application.self)
             app.activate()
         }
         let status = g_application_run(UnsafeMutablePointer<GApplication>(applicationPointer), 0, nil)

@@ -15,16 +15,13 @@ public class Widget {
         }
         didSet {
             if parentWidget != nil {
-                selfCopy = self
                 didMoveToParent()
             } else {
-                selfCopy = nil
                 didMoveFromParent()
                 removeSignals()
             }
         }
     }
-    var selfCopy: Widget?
     
     init() {
         widgetPointer = nil

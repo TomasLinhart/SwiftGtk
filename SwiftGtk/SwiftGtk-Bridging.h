@@ -4,6 +4,4 @@
 
 #import <gtk/gtk.h>
 
-gulong g_signal_connect_data_swift(gpointer instance, const gchar *detailed_signal, void (*c_handler)(gpointer, gpointer), gpointer data, GClosureNotify destroy_data, GConnectFlags connect_flags);
-
-char aa();
+gulong g_signal_connect_data_swift(gpointer instance, const gchar *detailed_signal, void (*c_handler)(gpointer, gpointer), const void *data, GClosureNotify destroy_data, GConnectFlags connect_flags);

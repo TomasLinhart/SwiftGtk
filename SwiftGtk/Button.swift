@@ -19,8 +19,8 @@ public class Button: Bin {
     override func didMoveToParent() {
         super.didMoveToParent()
         
-        let handlerId = connectSignal(widgetPointer, name: "clicked", data: &selfCopy) { _, data in
-            let button = UnsafeMutablePointer<Button>(data).memory
+        let handlerId = connectSignal(widgetPointer, name: "clicked", data: unsafeAddressOf(self)) { _, data in
+            let button = unsafeBitCast(data, Button.self)
             button.clicked?(button)
         }
         

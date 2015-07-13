@@ -20,7 +20,7 @@ enum ConnectFlags {
     }
 }
 
-func connectSignal<T>(instance: UnsafeMutablePointer<T>, name: String, data: UnsafeMutablePointer<Void>, connectFlags: ConnectFlags = .After, handler: @convention(c) (UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>) -> Void) -> UInt {
+func connectSignal<T>(instance: UnsafeMutablePointer<T>, name: String, data: UnsafePointer<Void>, connectFlags: ConnectFlags = .After, handler: @convention(c) (UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>) -> Void) -> UInt {
     return g_signal_connect_data_swift(instance, name, handler, data, nil, connectFlags.toGConnectFlags())
 }
 
