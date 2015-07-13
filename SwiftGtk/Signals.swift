@@ -20,10 +20,14 @@ enum ConnectFlags {
     }
 }
 
-func connectSignal<T>(instance: UnsafeMutablePointer<T>, name: String, data: UnsafeMutablePointer<Void>, connectFlags: ConnectFlags = .After, handler: @convention(c) (UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>) -> Void) -> gulong {
+func connectSignal<T>(instance: UnsafeMutablePointer<T>, name: String, data: UnsafeMutablePointer<Void>, connectFlags: ConnectFlags = .After, handler: @convention(c) (UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>) -> Void) -> UInt {
     return g_signal_connect_data_swift(instance, name, handler, data, nil, connectFlags.toGConnectFlags())
 }
 
-func connectSignal<T>(instance: UnsafeMutablePointer<T>, name: String, connectFlags: ConnectFlags = .After, handler: @convention(c) (UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>) -> Void) {
-    g_signal_connect_data_swift(instance, name, handler, nil, nil, connectFlags.toGConnectFlags())
+func connectSignal<T>(instance: UnsafeMutablePointer<T>, name: String, connectFlags: ConnectFlags = .After, handler: @convention(c) (UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>) -> Void) -> UInt {
+    return g_signal_connect_data_swift(instance, name, handler, nil, nil, connectFlags.toGConnectFlags())
+}
+
+func disconnectSignal<T>(instance: UnsafeMutablePointer<T>, handlerId: UInt) {
+    g_signal_handler_disconnect(instance, handlerId)
 }

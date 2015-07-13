@@ -36,6 +36,8 @@
 		78E164321B405CF6008A7CEC /* Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E164261B405CF6008A7CEC /* Widget.swift */; };
 		78E164331B405CF6008A7CEC /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E164271B405CF6008A7CEC /* Window.swift */; };
 		78E164441B407AD1008A7CEC /* SwiftGtk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E163DB1B405B3A008A7CEC /* SwiftGtk.framework */; };
+		78E1644B1B409078008A7CEC /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E1644A1B409078008A7CEC /* Label.swift */; };
+		78E1644D1B40979E008A7CEC /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E1644C1B40979E008A7CEC /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +104,8 @@
 		78E164271B405CF6008A7CEC /* Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
 		78E1643E1B4066CE008A7CEC /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		78E164491B40876F008A7CEC /* module.private.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.private.modulemap; sourceTree = "<group>"; };
+		78E1644A1B409078008A7CEC /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		78E1644C1B40979E008A7CEC /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +179,7 @@
 				78E163E01B405B3A008A7CEC /* Info.plist */,
 				78E1643E1B4066CE008A7CEC /* module.modulemap */,
 				78E164491B40876F008A7CEC /* module.private.modulemap */,
+				78E1644C1B40979E008A7CEC /* Common.swift */,
 			);
 			path = SwiftGtk;
 			sourceTree = "<group>";
@@ -228,6 +233,7 @@
 				78E164221B405CF6008A7CEC /* Container.swift */,
 				78E164261B405CF6008A7CEC /* Widget.swift */,
 				78E164271B405CF6008A7CEC /* Window.swift */,
+				78E1644A1B409078008A7CEC /* Label.swift */,
 			);
 			name = Widgets;
 			sourceTree = "<group>";
@@ -365,6 +371,8 @@
 			files = (
 				78E1642C1B405CF6008A7CEC /* Button.swift in Sources */,
 				78E1642D1B405CF6008A7CEC /* ButtonBox.swift in Sources */,
+				78E1644D1B40979E008A7CEC /* Common.swift in Sources */,
+				78E1644B1B409078008A7CEC /* Label.swift in Sources */,
 				78E164311B405CF6008A7CEC /* Signals.swift in Sources */,
 				78E164291B405CF6008A7CEC /* ApplicationWindow.swift in Sources */,
 				78E1642B1B405CF6008A7CEC /* Box.swift in Sources */,

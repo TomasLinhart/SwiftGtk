@@ -6,7 +6,8 @@ import Foundation
 import Gtk
 
 public class Widget {
-    var gtkPointer: UnsafeMutablePointer<GtkWidget>
+    var signals: [UInt] = []
+    var widgetPointer: UnsafeMutablePointer<GtkWidget>
     
     public weak var parentWidget: Widget? {
         willSet {
@@ -15,28 +16,47 @@ public class Widget {
         didSet {
             if parentWidget != nil {
                 selfCopy = self
+                didMoveToParent()
             } else {
                 selfCopy = nil
+                didMoveFromParent()
+                removeSignals()
             }
         }
     }
     var selfCopy: Widget?
     
     init() {
-        gtkPointer = nil
-        
-        selfCopy = self
+        widgetPointer = nil
     }
     
-    func setup() {
-        
+    private func removeSignals() {
+        for handlerId in signals {
+            disconnectSignal(widgetPointer, handlerId: handlerId)
+        }
     }
-    
-    func willMoveToParent() {
-        
-    }
-    
+
     func didMoveToParent() {
         
+    }
+    
+    func didMoveFromParent() {
+        
+    }
+    
+    public func showAll() {
+        gtk_widget_show_all(widgetPointer)
+    }
+    
+    public func showNow() {
+        gtk_widget_show_now(widgetPointer)
+    }
+    
+    public func show() {
+        gtk_widget_show(widgetPointer)
+    }
+    
+    public func hide() {
+        gtk_widget_hide(widgetPointer)
     }
 }

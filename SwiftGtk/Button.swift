@@ -8,28 +8,34 @@ import Gtk
 public class Button: Bin {
     public override init() {
         super.init()
-        
-        setup()
+        widgetPointer = gtk_button_new()
     }
     
-    override func setup() {
-        gtkPointer = UnsafeMutablePointer<GtkWidget>(gtk_button_new())
+    public init(label: String) {
+        super.init()
+        widgetPointer = gtk_button_new_with_label(label)
+    }
+    
+    override func didMoveToParent() {
+        super.didMoveToParent()
         
-        connectSignal(gtkPointer, name: "clicked", data: &selfCopy) { _, data in
+        let handlerId = connectSignal(widgetPointer, name: "clicked", data: &selfCopy) { _, data in
             let button = UnsafeMutablePointer<Button>(data).memory
             button.clicked?(button)
         }
+        
+        signals.append(handlerId)
     }
     
     public var label: String? {
         get {
-            return String.fromCString(gtk_button_get_label(UnsafeMutablePointer<GtkButton>(gtkPointer)))
+            return String.fromCString(gtk_button_get_label(UnsafeMutablePointer<GtkButton>(widgetPointer)))
         }
         set {
             if let title = newValue {
-                gtk_button_set_label(UnsafeMutablePointer<GtkButton>(gtkPointer), title)
+                gtk_button_set_label(UnsafeMutablePointer<GtkButton>(widgetPointer), title)
             } else {
-                gtk_button_set_label(UnsafeMutablePointer<GtkButton>(gtkPointer), nil)
+                gtk_button_set_label(UnsafeMutablePointer<GtkButton>(widgetPointer), nil)
             }
         }
     }

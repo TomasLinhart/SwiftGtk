@@ -6,38 +6,48 @@ import Foundation
 import Gtk
 
 public class Window: Bin {
-    public override init() {
-        super.init()
+    public enum WindowType {
+        case TopLevel
+        case PopUp
         
-        setup()
+        private func toGtkWindowType() -> GtkWindowType {
+            switch self {
+            case .TopLevel:
+                return GTK_WINDOW_TOPLEVEL
+            case .PopUp:
+                return GTK_WINDOW_POPUP
+            }
+        }
     }
     
-    override func setup() {
-        gtkPointer = UnsafeMutablePointer<GtkWidget>(gtk_window_new(GTK_WINDOW_TOPLEVEL))
+    public init(windowType: WindowType = .TopLevel) {
+        super.init()   
+        widgetPointer = gtk_window_new(windowType.toGtkWindowType())
     }
     
     public var title: String? {
         get {
-            return String.fromCString(gtk_window_get_title(UnsafeMutablePointer<GtkWindow>(gtkPointer)))
+            return String.fromCString(gtk_window_get_title(UnsafeMutablePointer<GtkWindow>(widgetPointer)))
         }
         set {
             if let title = newValue {
-                gtk_window_set_title(UnsafeMutablePointer<GtkWindow>(gtkPointer), title)
+                gtk_window_set_title(UnsafeMutablePointer<GtkWindow>(widgetPointer), title)
             } else {
-                gtk_window_set_title(UnsafeMutablePointer<GtkWindow>(gtkPointer), nil)
+                gtk_window_set_title(UnsafeMutablePointer<GtkWindow>(widgetPointer), nil)
             }
         }
     }
     
     public var defaultSize: CGSize? {
         get {
+            // TODO: Add proper size getter.
             return CGSize()
         }
         set {
             if let size = newValue {
-                gtk_window_set_default_size(UnsafeMutablePointer<GtkWindow>(gtkPointer), Int32(size.width), Int32(size.height))
+                gtk_window_set_default_size(UnsafeMutablePointer<GtkWindow>(widgetPointer), Int32(size.width), Int32(size.height))
             } else {
-                gtk_window_set_default_size(UnsafeMutablePointer<GtkWindow>(gtkPointer), 0, 0)
+                gtk_window_set_default_size(UnsafeMutablePointer<GtkWindow>(widgetPointer), 0, 0)
             }
         }
     }

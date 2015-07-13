@@ -6,36 +6,32 @@ import Foundation
 import Gtk
 
 public class Application {
-    private let application: UnsafeMutablePointer<GtkApplication>
+    let applicationPointer: UnsafeMutablePointer<GtkApplication>
     private (set) var applicationWindow: ApplicationWindow?
     private var windowCallback: ((window: ApplicationWindow) -> Void)?
     
     public init(applicationId: String) {
-        application = gtk_application_new(applicationId, G_APPLICATION_FLAGS_NONE)
+        applicationPointer = gtk_application_new(applicationId, G_APPLICATION_FLAGS_NONE)
     }
     
     public func run(windowCallback: (window: ApplicationWindow) -> Void) -> Int {
         self.windowCallback = windowCallback
         
         var selfCopy = self
-        connectSignal(application, name: "activate", data: &selfCopy) { sender, data in
+        connectSignal(applicationPointer, name: "activate", data: &selfCopy) { sender, data in
             let app = UnsafeMutablePointer<Application>(data).memory
             app.activate()
         }
-        let status = g_application_run(UnsafeMutablePointer<GApplication>(application), 0, nil)
-        g_object_unref(application)
+        let status = g_application_run(UnsafeMutablePointer<GApplication>(applicationPointer), 0, nil)
+        g_object_unref(applicationPointer)
         return Int(status)
     }
     
     private func activate() {
         let window = ApplicationWindow(application: self)
         windowCallback?(window: window)
-        gtk_widget_show_all(window.gtkPointer)
+        window.showAll()
         
         self.applicationWindow = window
-    }
-    
-    var gtkPointer: UnsafeMutablePointer<GtkApplication> {
-        return application
     }
 }

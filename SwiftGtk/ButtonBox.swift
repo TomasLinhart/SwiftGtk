@@ -22,6 +22,6 @@ public class ButtonBox: Box {
     
     public init(orientation: Orientation = .Horizontal) {
         super.init()
-        gtkPointer = gtk_button_box_new(orientation.toGtkOrientation())
+        widgetPointer = gtk_button_box_new(orientation.toGtkOrientation())
     }
 }

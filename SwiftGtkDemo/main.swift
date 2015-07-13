@@ -4,19 +4,30 @@
 
 import Foundation
 import SwiftGtk
-import Gtk
 
 let app = Application(applicationId: "com.tomaslinhart.swiftgtk.example")
 app.run { window in
     window.title = "Hello World"
     window.defaultSize = CGSize(width: 400, height: 400)
     
-    let buttonBox = ButtonBox()
+    let buttonBox = ButtonBox(orientation: .Vertical)
+
+    let label = Label()
+    label.selectable = true
+    buttonBox.add(label)
     
-    let button = Button()
+    let button = Button(label: "Press")
     button.label = "Press Me"
     button.clicked = { _ in
-        print("I was pressed")
+        label.text = "Oh, you pressed the button."
+        
+        let newWindow = Window(windowType: .TopLevel)
+        newWindow.title = "Just a window"
+        newWindow.defaultSize = CGSize(width: 200, height: 200)
+        let labelPressed = Label(text: "Oh, you pressed the button.")
+        newWindow.add(labelPressed)
+        
+        newWindow.showAll()   
     }
     
     buttonBox.add(button)
