@@ -1,8 +1,4 @@
 //
-//  SwiftGtk.h
-//  SwiftGtk
-//
-//  Created by Tomas Linhart on 28/06/15.
 //  Copyright © 2015 Tomas Linhart. All rights reserved.
 //
 
