@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		784588991C3B1D2D00FB615A /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784588981C3B1D2D00FB615A /* Size.swift */; };
 		78E163DF1B405B3A008A7CEC /* SwiftGtk.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E163DE1B405B3A008A7CEC /* SwiftGtk.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		78E163E61B405B3A008A7CEC /* SwiftGtk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E163DB1B405B3A008A7CEC /* SwiftGtk.framework */; };
 		78E163FC1B405BB3008A7CEC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E163FB1B405BB3008A7CEC /* main.swift */; };
@@ -68,6 +69,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		784588981C3B1D2D00FB615A /* Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
 		78E163DB1B405B3A008A7CEC /* SwiftGtk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftGtk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78E163DE1B405B3A008A7CEC /* SwiftGtk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftGtk.h; sourceTree = "<group>"; };
 		78E163E01B405B3A008A7CEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				78E164231B405CF6008A7CEC /* SwiftGtk-Bridging.m */,
 				78E164241B405CF6008A7CEC /* SwiftGtk-Bridging.h */,
 				78E164251B405CF6008A7CEC /* Signals.swift */,
+				784588981C3B1D2D00FB615A /* Size.swift */,
 				78E164181B405C44008A7CEC /* Libraries */,
 				78E163DE1B405B3A008A7CEC /* SwiftGtk.h */,
 				78E163E01B405B3A008A7CEC /* Info.plist */,
@@ -373,6 +376,7 @@
 				78E1642A1B405CF6008A7CEC /* Bin.swift in Sources */,
 				78E164321B405CF6008A7CEC /* Widget.swift in Sources */,
 				78E1642F1B405CF6008A7CEC /* SwiftGtk-Bridging.m in Sources */,
+				784588991C3B1D2D00FB615A /* Size.swift in Sources */,
 				78E164281B405CF6008A7CEC /* Application.swift in Sources */,
 				78E164331B405CF6008A7CEC /* Window.swift in Sources */,
 			);

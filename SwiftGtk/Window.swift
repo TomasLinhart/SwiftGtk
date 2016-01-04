@@ -2,7 +2,6 @@
 //  Copyright © 2015 Tomas Linhart. All rights reserved.
 //
 
-import Foundation
 import Gtk
 
 public class Window: Bin {
@@ -38,10 +37,10 @@ public class Window: Bin {
         }
     }
     
-    public var defaultSize: CGSize? {
+    public var defaultSize: Size? {
         get {
             // TODO: Add proper size getter.
-            return CGSize()
+            return Size()
         }
         set {
             if let size = newValue {

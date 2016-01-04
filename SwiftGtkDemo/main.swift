@@ -2,13 +2,12 @@
 //  Copyright © 2015 Tomas Linhart. All rights reserved.
 //
 
-import Foundation
 import SwiftGtk
 
 let app = Application(applicationId: "com.tomaslinhart.swiftgtk.example")
 app.run { window in
     window.title = "Hello World"
-    window.defaultSize = CGSize(width: 400, height: 400)
+    window.defaultSize = Size(width: 400, height: 400)
     
     let buttonBox = ButtonBox(orientation: .Vertical)
 
@@ -23,7 +22,7 @@ app.run { window in
         
         let newWindow = Window(windowType: .TopLevel)
         newWindow.title = "Just a window"
-        newWindow.defaultSize = CGSize(width: 200, height: 200)
+        newWindow.defaultSize = Size(width: 200, height: 200)
         let labelPressed = Label(text: "Oh, you pressed the button.")
         newWindow.add(labelPressed)
         
