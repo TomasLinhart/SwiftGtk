@@ -49,4 +49,13 @@ public class Window: Bin {
             gtk_window_set_default_size(UnsafeMutablePointer<GtkWindow>(widgetPointer), Int32(size.width), Int32(size.height))
         }
     }
+    
+    public var resizable: Bool {
+        get {
+            return gtk_window_get_resizable(UnsafeMutablePointer<GtkWindow>(widgetPointer)) == 1 ? true : false
+        }
+        set {
+            gtk_window_set_resizable(UnsafeMutablePointer<GtkWindow>(widgetPointer), Int32(newValue ? 1 : 0))
+        }
+    }
 }

@@ -8,6 +8,7 @@ let app = Application(applicationId: "com.tomaslinhart.swiftgtk.example")
 app.run { window in
     window.title = "Hello World"
     window.defaultSize = Size(width: 400, height: 400)
+    window.resizable = true
     
     let buttonBox = ButtonBox(orientation: .Vertical)
 
