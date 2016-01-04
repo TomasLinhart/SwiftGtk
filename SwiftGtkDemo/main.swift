@@ -18,7 +18,7 @@ app.run { window in
     
     let button = Button(label: "Press")
     button.label = "Press Me"
-    button.clicked = { _ in
+    button.clicked = { [unowned label] _ in
         label.text = "Oh, you pressed the button."
         
         let newWindow = Window(windowType: .TopLevel)
