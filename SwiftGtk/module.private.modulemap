@@ -1,9 +1,1 @@
-module Gtk {
-    header "/usr/local/include/gtk-3.0/gtk/gtk.h"
-}
-
-module SwiftGtk {
-    module Private {
-        header "SwiftGtk-Bridging.h"
-    }
-}
+// Left for future in hope it can be also with Swift 2.2 as it was used before. See Git history.

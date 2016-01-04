@@ -3,7 +3,7 @@
 //
 
 import Gtk
-import SwiftGtk.Private
+import SwiftGtkPrivate
 
 enum ConnectFlags {
     case After

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		784588991C3B1D2D00FB615A /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784588981C3B1D2D00FB615A /* Size.swift */; };
-		78E163DF1B405B3A008A7CEC /* SwiftGtk.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E163DE1B405B3A008A7CEC /* SwiftGtk.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		78E163E61B405B3A008A7CEC /* SwiftGtk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E163DB1B405B3A008A7CEC /* SwiftGtk.framework */; };
 		78E163FC1B405BB3008A7CEC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E163FB1B405BB3008A7CEC /* main.swift */; };
 		78E1640C1B405C3E008A7CEC /* libgailutil-3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E164001B405C3E008A7CEC /* libgailutil-3.0.dylib */; };
@@ -71,7 +70,6 @@
 /* Begin PBXFileReference section */
 		784588981C3B1D2D00FB615A /* Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
 		78E163DB1B405B3A008A7CEC /* SwiftGtk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftGtk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		78E163DE1B405B3A008A7CEC /* SwiftGtk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftGtk.h; sourceTree = "<group>"; };
 		78E163E01B405B3A008A7CEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78E163E51B405B3A008A7CEC /* SwiftGtkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftGtkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78E163EC1B405B3A008A7CEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -174,7 +172,6 @@
 				78E164251B405CF6008A7CEC /* Signals.swift */,
 				784588981C3B1D2D00FB615A /* Size.swift */,
 				78E164181B405C44008A7CEC /* Libraries */,
-				78E163DE1B405B3A008A7CEC /* SwiftGtk.h */,
 				78E163E01B405B3A008A7CEC /* Info.plist */,
 				78E1643E1B4066CE008A7CEC /* module.modulemap */,
 				78E164491B40876F008A7CEC /* module.private.modulemap */,
@@ -242,7 +239,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78E163DF1B405B3A008A7CEC /* SwiftGtk.h in Headers */,
 				78E164301B405CF6008A7CEC /* SwiftGtk-Bridging.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -595,7 +591,6 @@
 		78E163FE1B405BB3008A7CEC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -603,7 +598,6 @@
 		78E163FF1B405BB3008A7CEC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
