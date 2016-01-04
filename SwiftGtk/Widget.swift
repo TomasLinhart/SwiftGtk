@@ -55,4 +55,13 @@ public class Widget {
     public func hide() {
         gtk_widget_hide(widgetPointer)
     }
+    
+    public var opacity: Double {
+        get {
+            return gtk_widget_get_opacity(UnsafeMutablePointer<GtkWidget>(widgetPointer))
+        }
+        set {
+            gtk_widget_set_opacity(UnsafeMutablePointer<GtkWidget>(widgetPointer), newValue)
+        }
+    }
 }
