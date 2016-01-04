@@ -37,17 +37,16 @@ public class Window: Bin {
         }
     }
     
-    public var defaultSize: Size? {
+    public var defaultSize: Size {
         get {
-            // TODO: Add proper size getter.
-            return Size()
+            var width: Int32 = 0
+            var height: Int32 = 0
+            gtk_window_get_default_size(UnsafeMutablePointer<GtkWindow>(widgetPointer), &width, &height)
+
+            return Size(width: Int(width), height: Int(height))
         }
-        set {
-            if let size = newValue {
-                gtk_window_set_default_size(UnsafeMutablePointer<GtkWindow>(widgetPointer), Int32(size.width), Int32(size.height))
-            } else {
-                gtk_window_set_default_size(UnsafeMutablePointer<GtkWindow>(widgetPointer), 0, 0)
-            }
+        set (size) {
+            gtk_window_set_default_size(UnsafeMutablePointer<GtkWindow>(widgetPointer), Int32(size.width), Int32(size.height))
         }
     }
 }

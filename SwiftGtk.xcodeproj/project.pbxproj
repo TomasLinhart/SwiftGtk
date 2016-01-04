@@ -595,6 +595,7 @@
 		78E163FE1B405BB3008A7CEC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -602,6 +603,7 @@
 		78E163FF1B405BB3008A7CEC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
