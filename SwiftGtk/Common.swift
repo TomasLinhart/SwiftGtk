@@ -2,7 +2,7 @@
 //  Copyright © 2016 Tomas Linhart. All rights reserved.
 //
 
-import Gtk
+import CGtk
 
 extension gboolean {
     func toBool() -> Bool {

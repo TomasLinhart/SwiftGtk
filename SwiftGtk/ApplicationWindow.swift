@@ -2,7 +2,7 @@
 //  Copyright © 2015 Tomas Linhart. All rights reserved.
 //
 
-import Gtk
+import CGtk
 
 public class ApplicationWindow: Window {
     public init(application: Application) {
