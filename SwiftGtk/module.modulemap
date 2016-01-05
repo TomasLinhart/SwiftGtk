@@ -3,7 +3,3 @@
 module Gtk {
     header "/usr/local/include/gtk-3.0/gtk/gtk.h"
 }
-
-module SwiftGtkPrivate {
-    header "SwiftGtk-Bridging.h"
-}
