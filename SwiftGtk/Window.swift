@@ -52,10 +52,10 @@ public class Window: Bin {
     
     public var resizable: Bool {
         get {
-            return gtk_window_get_resizable(UnsafeMutablePointer<GtkWindow>(widgetPointer)) == 1 ? true : false
+            return gtk_window_get_resizable(UnsafeMutablePointer(widgetPointer)).toBool()
         }
         set {
-            gtk_window_set_resizable(UnsafeMutablePointer<GtkWindow>(widgetPointer), Int32(newValue ? 1 : 0))
+            gtk_window_set_resizable(UnsafeMutablePointer(widgetPointer), newValue.toGBoolean())
         }
     }
 }

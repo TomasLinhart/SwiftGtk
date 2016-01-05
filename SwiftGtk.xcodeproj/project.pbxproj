@@ -34,6 +34,8 @@
 		78E164331B405CF6008A7CEC /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E164271B405CF6008A7CEC /* Window.swift */; };
 		78E164441B407AD1008A7CEC /* SwiftGtk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E163DB1B405B3A008A7CEC /* SwiftGtk.framework */; };
 		78E1644B1B409078008A7CEC /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E1644A1B409078008A7CEC /* Label.swift */; };
+		78FDFEFE1C3C3D0100A0859B /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FDFEFD1C3C3D0100A0859B /* TextView.swift */; };
+		78FDFF001C3C3EEF00A0859B /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FDFEFF1C3C3EEF00A0859B /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +100,8 @@
 		78E1643E1B4066CE008A7CEC /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		78E164491B40876F008A7CEC /* module.private.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.private.modulemap; sourceTree = "<group>"; };
 		78E1644A1B409078008A7CEC /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		78FDFEFD1C3C3D0100A0859B /* TextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		78FDFEFF1C3C3EEF00A0859B /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,13 +166,14 @@
 		78E163DD1B405B3A008A7CEC /* SwiftGtk */ = {
 			isa = PBXGroup;
 			children = (
+				78E164181B405C44008A7CEC /* Libraries */,
 				78E164451B407BBB008A7CEC /* Widgets */,
 				78E164251B405CF6008A7CEC /* Signals.swift */,
 				784588981C3B1D2D00FB615A /* Size.swift */,
-				78E164181B405C44008A7CEC /* Libraries */,
 				78E163E01B405B3A008A7CEC /* Info.plist */,
 				78E1643E1B4066CE008A7CEC /* module.modulemap */,
 				78E164491B40876F008A7CEC /* module.private.modulemap */,
+				78FDFEFF1C3C3EEF00A0859B /* Common.swift */,
 			);
 			path = SwiftGtk;
 			sourceTree = "<group>";
@@ -222,6 +227,7 @@
 				78E164261B405CF6008A7CEC /* Widget.swift */,
 				78E164271B405CF6008A7CEC /* Window.swift */,
 				78E1644A1B409078008A7CEC /* Label.swift */,
+				78FDFEFD1C3C3D0100A0859B /* TextView.swift */,
 			);
 			name = Widgets;
 			sourceTree = "<group>";
@@ -358,8 +364,10 @@
 				78E1642C1B405CF6008A7CEC /* Button.swift in Sources */,
 				78E1642D1B405CF6008A7CEC /* ButtonBox.swift in Sources */,
 				78E1644B1B409078008A7CEC /* Label.swift in Sources */,
+				78FDFEFE1C3C3D0100A0859B /* TextView.swift in Sources */,
 				78E164311B405CF6008A7CEC /* Signals.swift in Sources */,
 				78E164291B405CF6008A7CEC /* ApplicationWindow.swift in Sources */,
+				78FDFF001C3C3EEF00A0859B /* Common.swift in Sources */,
 				78E1642B1B405CF6008A7CEC /* Box.swift in Sources */,
 				78E1642E1B405CF6008A7CEC /* Container.swift in Sources */,
 				78E1642A1B405CF6008A7CEC /* Bin.swift in Sources */,

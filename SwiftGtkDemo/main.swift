@@ -31,5 +31,10 @@ app.run { window in
     }
     
     buttonBox.add(button)
+    
+    let textView = TextView()
+    
+    buttonBox.add(textView)
+    
     window.add(buttonBox)
 }
