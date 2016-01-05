@@ -26,13 +26,13 @@ public class Window: Bin {
     
     public var title: String? {
         get {
-            return String.fromCString(gtk_window_get_title(UnsafeMutablePointer<GtkWindow>(widgetPointer)))
+            return String.fromCString(gtk_window_get_title(UnsafeMutablePointer(widgetPointer)))
         }
         set {
             if let title = newValue {
-                gtk_window_set_title(UnsafeMutablePointer<GtkWindow>(widgetPointer), title)
+                gtk_window_set_title(UnsafeMutablePointer(widgetPointer), title)
             } else {
-                gtk_window_set_title(UnsafeMutablePointer<GtkWindow>(widgetPointer), nil)
+                gtk_window_set_title(UnsafeMutablePointer(widgetPointer), nil)
             }
         }
     }
@@ -41,12 +41,12 @@ public class Window: Bin {
         get {
             var width: Int32 = 0
             var height: Int32 = 0
-            gtk_window_get_default_size(UnsafeMutablePointer<GtkWindow>(widgetPointer), &width, &height)
+            gtk_window_get_default_size(UnsafeMutablePointer(widgetPointer), &width, &height)
 
             return Size(width: Int(width), height: Int(height))
         }
         set (size) {
-            gtk_window_set_default_size(UnsafeMutablePointer<GtkWindow>(widgetPointer), Int32(size.width), Int32(size.height))
+            gtk_window_set_default_size(UnsafeMutablePointer(widgetPointer), Int32(size.width), Int32(size.height))
         }
     }
     

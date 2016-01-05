@@ -28,13 +28,13 @@ public class Button: Bin {
     
     public var label: String? {
         get {
-            return String.fromCString(gtk_button_get_label(UnsafeMutablePointer<GtkButton>(widgetPointer)))
+            return String.fromCString(gtk_button_get_label(UnsafeMutablePointer(widgetPointer)))
         }
         set {
             if let title = newValue {
-                gtk_button_set_label(UnsafeMutablePointer<GtkButton>(widgetPointer), title)
+                gtk_button_set_label(UnsafeMutablePointer(widgetPointer), title)
             } else {
-                gtk_button_set_label(UnsafeMutablePointer<GtkButton>(widgetPointer), nil)
+                gtk_button_set_label(UnsafeMutablePointer(widgetPointer), nil)
             }
         }
     }

@@ -20,7 +20,7 @@ public class Application {
             let app = unsafeBitCast(data, Application.self)
             app.activate()
         }
-        let status = g_application_run(UnsafeMutablePointer<GApplication>(applicationPointer), 0, nil)
+        let status = g_application_run(UnsafeMutablePointer(applicationPointer), 0, nil)
         g_object_unref(applicationPointer)
         return Int(status)
     }

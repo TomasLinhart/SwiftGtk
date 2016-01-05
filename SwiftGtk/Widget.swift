@@ -58,10 +58,10 @@ public class Widget {
     
     public var opacity: Double {
         get {
-            return gtk_widget_get_opacity(UnsafeMutablePointer<GtkWidget>(widgetPointer))
+            return gtk_widget_get_opacity(widgetPointer)
         }
         set {
-            gtk_widget_set_opacity(UnsafeMutablePointer<GtkWidget>(widgetPointer), newValue)
+            gtk_widget_set_opacity(widgetPointer, newValue)
         }
     }
 }
