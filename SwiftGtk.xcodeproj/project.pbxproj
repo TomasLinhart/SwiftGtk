@@ -39,6 +39,8 @@
 		78FDFF041C3C617E00A0859B /* SignalBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FDFF031C3C617E00A0859B /* SignalBox.swift */; };
 		78FDFF061C3C7B8200A0859B /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FDFF051C3C7B8200A0859B /* Calendar.swift */; };
 		78FDFF081C3C80D400A0859B /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FDFF071C3C80D400A0859B /* Value.swift */; };
+		78FDFF0A1C3C874D00A0859B /* GTK.png in Copy Files */ = {isa = PBXBuildFile; fileRef = 78FDFF091C3C872A00A0859B /* GTK.png */; };
+		78FDFF0F1C3C87AF00A0859B /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FDFF0E1C3C87AF00A0859B /* Image.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,14 +61,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		78E163F71B405BB3008A7CEC /* CopyFiles */ = {
+		78E163F71B405BB3008A7CEC /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 7;
 			files = (
+				78FDFF0A1C3C874D00A0859B /* GTK.png in Copy Files */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -108,6 +112,8 @@
 		78FDFF031C3C617E00A0859B /* SignalBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalBox.swift; sourceTree = "<group>"; };
 		78FDFF051C3C7B8200A0859B /* Calendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
 		78FDFF071C3C80D400A0859B /* Value.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Value.swift; sourceTree = "<group>"; };
+		78FDFF091C3C872A00A0859B /* GTK.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GTK.png; path = ../SwiftGtk/GTK.png; sourceTree = "<group>"; };
+		78FDFF0E1C3C87AF00A0859B /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +203,7 @@
 		78E163FA1B405BB3008A7CEC /* SwiftGtkDemo */ = {
 			isa = PBXGroup;
 			children = (
+				78FDFF091C3C872A00A0859B /* GTK.png */,
 				78E163FB1B405BB3008A7CEC /* main.swift */,
 			);
 			path = SwiftGtkDemo;
@@ -237,6 +244,7 @@
 				78E1644A1B409078008A7CEC /* Label.swift */,
 				78FDFEFD1C3C3D0100A0859B /* TextView.swift */,
 				78FDFF051C3C7B8200A0859B /* Calendar.swift */,
+				78FDFF0E1C3C87AF00A0859B /* Image.swift */,
 			);
 			name = Widgets;
 			sourceTree = "<group>";
@@ -296,7 +304,7 @@
 			buildPhases = (
 				78E163F51B405BB3008A7CEC /* Sources */,
 				78E163F61B405BB3008A7CEC /* Frameworks */,
-				78E163F71B405BB3008A7CEC /* CopyFiles */,
+				78E163F71B405BB3008A7CEC /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -371,6 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78E1642C1B405CF6008A7CEC /* Button.swift in Sources */,
+				78FDFF0F1C3C87AF00A0859B /* Image.swift in Sources */,
 				78E1642D1B405CF6008A7CEC /* ButtonBox.swift in Sources */,
 				78E1644B1B409078008A7CEC /* Label.swift in Sources */,
 				78FDFF061C3C7B8200A0859B /* Calendar.swift in Sources */,

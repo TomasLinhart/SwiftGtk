@@ -5,7 +5,7 @@
 import CGtk
 
 public class Calendar: Widget {
-    public init(text: String? = nil) {
+    public override init() {
         super.init()
         
         widgetPointer = gtk_calendar_new()

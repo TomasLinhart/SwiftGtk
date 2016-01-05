@@ -50,6 +50,21 @@ app.run { window in
     
     buttonBox.add(calendarButton)
     
+    let imageButton = Button(label: "Image")
+    imageButton.clicked = { _ in
+        let newWindow = Window(windowType: .TopLevel)
+        newWindow.title = "Just a window"
+        newWindow.defaultSize = Size(width: 200, height: 200)
+        
+        let image = Image(filename: "GTK.png")
+        
+        newWindow.add(image)
+        
+        newWindow.showAll()
+    }
+    
+    buttonBox.add(imageButton)
+    
     let textView = TextView()
     textView.backspace = { _ in
         print("backspace")
