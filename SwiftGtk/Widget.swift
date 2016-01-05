@@ -5,7 +5,16 @@
 import CGtk
 
 public class Widget {
-    var signals: [UInt] = []
+    /// Provides a box that captures a callback for a signal so it makes easier to add signals.
+    class SignalBox {
+        let callback: () -> Void
+        
+        init(callback: () -> Void) {
+            self.callback = callback
+        }
+    }
+    
+    private var signals: [(UInt, SignalBox)] = []
     var widgetPointer: UnsafeMutablePointer<GtkWidget>
     
     public weak var parentWidget: Widget? {
@@ -26,10 +35,16 @@ public class Widget {
         widgetPointer = nil
     }
     
+    deinit {
+        removeSignals()
+    }
+    
     private func removeSignals() {
-        for handlerId in signals {
+        for (handlerId, _) in signals {
             disconnectSignal(widgetPointer, handlerId: handlerId)
         }
+        
+        signals = []
     }
 
     func didMoveToParent() {
@@ -38,6 +53,17 @@ public class Widget {
     
     func didMoveFromParent() {
         
+    }
+    
+    /// Adds a signal that is not carrying any additional information.
+    func addSimpleSignal(name: String, callback: () -> Void) {
+        let box = SignalBox(callback: callback)
+        let handlerId = connectSignal(widgetPointer, name: name, data: unsafeAddressOf(box)) { _, data in
+            let box = unsafeBitCast(data, SignalBox.self)
+            box.callback()
+        }
+        
+        signals.append((handlerId, box))
     }
     
     public func showAll() {

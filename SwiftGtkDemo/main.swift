@@ -33,6 +33,18 @@ app.run { window in
     buttonBox.add(button)
     
     let textView = TextView()
+    textView.backspace = { _ in
+        print("backspace")
+    }
+    textView.copyClipboard = { _ in
+        print("copyClipboard")
+    }
+    textView.cutClipboard = { _ in
+        print("cutClipboard")
+    }
+    textView.pasteClipboard = { _ in
+        print("pasteClipboard")
+    }
     
     buttonBox.add(textView)
     
