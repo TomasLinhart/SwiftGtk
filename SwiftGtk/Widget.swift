@@ -119,6 +119,18 @@ public class Widget {
         signals.append((handlerId, box))
     }
     
+    func addSignal(name: String, callback: SignalCallbackSix) {
+        let box = SignalBoxSix(callback: callback)
+        let handler: @convention(c) (UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>) -> Void = { sender, pointer1, pointer2, pointer3, pointer4, pointer5, pointer6, data in
+            let box = unsafeBitCast(data, SignalBoxSix.self)
+            box.callback(pointer1, pointer2, pointer3, pointer4, pointer5, pointer6)
+        }
+        
+        let handlerId = connectSignal(widgetPointer, name: name, data: unsafeAddressOf(box), handler: unsafeBitCast(handler, GCallback.self))
+        
+        signals.append((handlerId, box))
+    }
+    
     public func showAll() {
         gtk_widget_show_all(widgetPointer)
     }

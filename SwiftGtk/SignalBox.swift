@@ -16,6 +16,7 @@ typealias SignalCallbackTwo = (UnsafeMutablePointer<Void>, UnsafeMutablePointer<
 typealias SignalCallbackThree = (UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>) -> Void
 typealias SignalCallbackFour = (UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>) -> Void
 typealias SignalCallbackFive = (UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>) -> Void
+typealias SignalCallbackSix = (UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>) -> Void
 
 /// Provides a box that captures a callback for a signal so it makes easier to add signals.
 class SignalBoxZero: SignalBox {
@@ -70,6 +71,16 @@ class SignalBoxFour: SignalBox {
 
 class SignalBoxFive: SignalBox {
     typealias CallbackType = SignalCallbackFive
+    
+    let callback: CallbackType
+    
+    required init(callback: CallbackType) {
+        self.callback = callback
+    }
+}
+
+class SignalBoxSix: SignalBox {
+    typealias CallbackType = SignalCallbackSix
     
     let callback: CallbackType
     
