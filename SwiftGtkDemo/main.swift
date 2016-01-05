@@ -27,7 +27,7 @@ app.run { window in
         let labelPressed = Label(text: "Oh, you pressed the button.")
         newWindow.add(labelPressed)
         
-        newWindow.showAll()   
+        newWindow.showAll()
     }
     
     buttonBox.add(button)
