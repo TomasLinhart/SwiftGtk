@@ -37,6 +37,8 @@
 		78FDFEFE1C3C3D0100A0859B /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FDFEFD1C3C3D0100A0859B /* TextView.swift */; };
 		78FDFF001C3C3EEF00A0859B /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FDFEFF1C3C3EEF00A0859B /* Common.swift */; };
 		78FDFF041C3C617E00A0859B /* SignalBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FDFF031C3C617E00A0859B /* SignalBox.swift */; };
+		78FDFF061C3C7B8200A0859B /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FDFF051C3C7B8200A0859B /* Calendar.swift */; };
+		78FDFF081C3C80D400A0859B /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FDFF071C3C80D400A0859B /* Value.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +106,8 @@
 		78FDFEFD1C3C3D0100A0859B /* TextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		78FDFEFF1C3C3EEF00A0859B /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		78FDFF031C3C617E00A0859B /* SignalBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalBox.swift; sourceTree = "<group>"; };
+		78FDFF051C3C7B8200A0859B /* Calendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		78FDFF071C3C80D400A0859B /* Value.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Value.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +181,7 @@
 				78E164491B40876F008A7CEC /* module.private.modulemap */,
 				78FDFEFF1C3C3EEF00A0859B /* Common.swift */,
 				78FDFF031C3C617E00A0859B /* SignalBox.swift */,
+				78FDFF071C3C80D400A0859B /* Value.swift */,
 			);
 			path = SwiftGtk;
 			sourceTree = "<group>";
@@ -231,6 +236,7 @@
 				78E164271B405CF6008A7CEC /* Window.swift */,
 				78E1644A1B409078008A7CEC /* Label.swift */,
 				78FDFEFD1C3C3D0100A0859B /* TextView.swift */,
+				78FDFF051C3C7B8200A0859B /* Calendar.swift */,
 			);
 			name = Widgets;
 			sourceTree = "<group>";
@@ -367,7 +373,9 @@
 				78E1642C1B405CF6008A7CEC /* Button.swift in Sources */,
 				78E1642D1B405CF6008A7CEC /* ButtonBox.swift in Sources */,
 				78E1644B1B409078008A7CEC /* Label.swift in Sources */,
+				78FDFF061C3C7B8200A0859B /* Calendar.swift in Sources */,
 				78FDFF041C3C617E00A0859B /* SignalBox.swift in Sources */,
+				78FDFF081C3C80D400A0859B /* Value.swift in Sources */,
 				78FDFEFE1C3C3D0100A0859B /* TextView.swift in Sources */,
 				78E164311B405CF6008A7CEC /* Signals.swift in Sources */,
 				78E164291B405CF6008A7CEC /* ApplicationWindow.swift in Sources */,

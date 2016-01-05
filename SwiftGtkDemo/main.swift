@@ -24,6 +24,7 @@ app.run { window in
         let newWindow = Window(windowType: .TopLevel)
         newWindow.title = "Just a window"
         newWindow.defaultSize = Size(width: 200, height: 200)
+        
         let labelPressed = Label(text: "Oh, you pressed the button.")
         newWindow.add(labelPressed)
         
@@ -31,6 +32,23 @@ app.run { window in
     }
     
     buttonBox.add(button)
+    
+    let calendarButton = Button(label: "Calendar")
+    calendarButton.clicked = { _ in
+        let newWindow = Window(windowType: .TopLevel)
+        newWindow.title = "Just a window"
+        newWindow.defaultSize = Size(width: 200, height: 200)
+        
+        let calendar = Calendar()
+        calendar.year = 2000
+        calendar.showHeading = true
+        
+        newWindow.add(calendar)
+        
+        newWindow.showAll()
+    }
+    
+    buttonBox.add(calendarButton)
     
     let textView = TextView()
     textView.backspace = { _ in
