@@ -18,7 +18,7 @@ public class Button: Bin {
     override func didMoveToParent() {
         super.didMoveToParent()
         
-        addSimpleSignal("clicked") { [unowned self] in self.clicked?(self) }
+        addSignal("clicked") { [unowned self] in self.clicked?(self) }
     }
     
     public var label: String? {

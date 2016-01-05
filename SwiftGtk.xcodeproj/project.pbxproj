@@ -36,6 +36,7 @@
 		78E1644B1B409078008A7CEC /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E1644A1B409078008A7CEC /* Label.swift */; };
 		78FDFEFE1C3C3D0100A0859B /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FDFEFD1C3C3D0100A0859B /* TextView.swift */; };
 		78FDFF001C3C3EEF00A0859B /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FDFEFF1C3C3EEF00A0859B /* Common.swift */; };
+		78FDFF041C3C617E00A0859B /* SignalBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FDFF031C3C617E00A0859B /* SignalBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,7 @@
 		78E1644A1B409078008A7CEC /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		78FDFEFD1C3C3D0100A0859B /* TextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		78FDFEFF1C3C3EEF00A0859B /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		78FDFF031C3C617E00A0859B /* SignalBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 				78E1643E1B4066CE008A7CEC /* module.modulemap */,
 				78E164491B40876F008A7CEC /* module.private.modulemap */,
 				78FDFEFF1C3C3EEF00A0859B /* Common.swift */,
+				78FDFF031C3C617E00A0859B /* SignalBox.swift */,
 			);
 			path = SwiftGtk;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 				78E1642C1B405CF6008A7CEC /* Button.swift in Sources */,
 				78E1642D1B405CF6008A7CEC /* ButtonBox.swift in Sources */,
 				78E1644B1B409078008A7CEC /* Label.swift in Sources */,
+				78FDFF041C3C617E00A0859B /* SignalBox.swift in Sources */,
 				78FDFEFE1C3C3D0100A0859B /* TextView.swift in Sources */,
 				78E164311B405CF6008A7CEC /* Signals.swift in Sources */,
 				78E164291B405CF6008A7CEC /* ApplicationWindow.swift in Sources */,

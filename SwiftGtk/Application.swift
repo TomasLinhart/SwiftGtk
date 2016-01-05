@@ -16,10 +16,12 @@ public class Application {
     public func run(windowCallback: (window: ApplicationWindow) -> Void) -> Int {
         self.windowCallback = windowCallback
         
-        connectSignal(applicationPointer, name: "activate", data: unsafeAddressOf(self)) { sender, data in
+        let handler: @convention(c) (UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>) -> Void = { sender, data in
             let app = unsafeBitCast(data, Application.self)
             app.activate()
         }
+        
+        connectSignal(applicationPointer, name: "activate", data: unsafeAddressOf(self), handler: unsafeBitCast(handler, GCallback.self))
         let status = g_application_run(UnsafeMutablePointer(applicationPointer), 0, nil)
         g_object_unref(applicationPointer)
         return Int(status)
