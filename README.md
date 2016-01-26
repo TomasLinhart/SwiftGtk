@@ -1,6 +1,6 @@
 # SwiftGtk
 
-SwiftGtk is a experimental Gtk+ binding for Swift that tries to make usage of Gtk+ pleasant and "Swifty" as much as possible. Currently it implements only a small subset of Gtk+ and it works only on Mac OS X due [limitations](https://bugs.swift.org/browse/SR-145) in [spm](https://github.com/apple/swift-package-manager).
+SwiftGtk is a experimental Gtk+ binding for Swift that tries to make usage of Gtk+ pleasant and "Swifty" as much as possible. Currently it implements only a small subset of Gtk+ and it works only on Mac OS X and Linux.
 
 ## Dependencies
 
