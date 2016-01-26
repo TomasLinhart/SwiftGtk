@@ -82,9 +82,9 @@
 		78E163EC1B405B3A008A7CEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78E163F91B405BB3008A7CEC /* SwiftGtkDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftGtkDemo; sourceTree = BUILT_PRODUCTS_DIR; };
 		78E163FB1B405BB3008A7CEC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		78E164001B405C3E008A7CEC /* libgailutil-3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgailutil-3.0.dylib"; path = "/usr/local/Cellar/gtk+3/3.16.2/lib/libgailutil-3.0.dylib"; sourceTree = "<absolute>"; };
-		78E164011B405C3E008A7CEC /* libgdk-3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgdk-3.0.dylib"; path = "/usr/local/Cellar/gtk+3/3.16.2/lib/libgdk-3.0.dylib"; sourceTree = "<absolute>"; };
-		78E164021B405C3E008A7CEC /* libgtk-3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgtk-3.0.dylib"; path = "/usr/local/Cellar/gtk+3/3.16.2/lib/libgtk-3.0.dylib"; sourceTree = "<absolute>"; };
+		78E164001B405C3E008A7CEC /* libgailutil-3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgailutil-3.0.dylib"; path = "/usr/local/Cellar/gtk+3/3.18.6/lib/libgailutil-3.0.dylib"; sourceTree = "<absolute>"; };
+		78E164011B405C3E008A7CEC /* libgdk-3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgdk-3.0.dylib"; path = "/usr/local/Cellar/gtk+3/3.18.6/lib/libgdk-3.0.dylib"; sourceTree = "<absolute>"; };
+		78E164021B405C3E008A7CEC /* libgtk-3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgtk-3.0.dylib"; path = "/usr/local/Cellar/gtk+3/3.18.6/lib/libgtk-3.0.dylib"; sourceTree = "<absolute>"; };
 		78E164031B405C3E008A7CEC /* libpango-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libpango-1.0.0.dylib"; path = "/usr/local/Cellar/pango/1.36.8/lib/libpango-1.0.0.dylib"; sourceTree = "<absolute>"; };
 		78E164041B405C3E008A7CEC /* libpixman-1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libpixman-1.0.dylib"; path = "/usr/local/Cellar/pixman/0.32.6/lib/libpixman-1.0.dylib"; sourceTree = "<absolute>"; };
 		78E164051B405C3E008A7CEC /* libatk-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libatk-1.0.0.dylib"; path = "/usr/local/Cellar/atk/2.16.0/lib/libatk-1.0.0.dylib"; sourceTree = "<absolute>"; };
@@ -112,7 +112,7 @@
 		78FDFF031C3C617E00A0859B /* SignalBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalBox.swift; sourceTree = "<group>"; };
 		78FDFF051C3C7B8200A0859B /* Calendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
 		78FDFF071C3C80D400A0859B /* Value.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Value.swift; sourceTree = "<group>"; };
-		78FDFF091C3C872A00A0859B /* GTK.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GTK.png; path = ../SwiftGtk/GTK.png; sourceTree = "<group>"; };
+		78FDFF091C3C872A00A0859B /* GTK.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GTK.png; sourceTree = "<group>"; };
 		78FDFF0E1C3C87AF00A0859B /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -189,7 +189,8 @@
 				78FDFF031C3C617E00A0859B /* SignalBox.swift */,
 				78FDFF071C3C80D400A0859B /* Value.swift */,
 			);
-			path = SwiftGtk;
+			name = SwiftGtk;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		78E163E91B405B3A008A7CEC /* SwiftGtkTests */ = {
@@ -206,7 +207,8 @@
 				78FDFF091C3C872A00A0859B /* GTK.png */,
 				78E163FB1B405BB3008A7CEC /* main.swift */,
 			);
-			path = SwiftGtkDemo;
+			name = SwiftGtkDemo;
+			path = SwiftGtkDemo/Sources;
 			sourceTree = "<group>";
 		};
 		78E164181B405C44008A7CEC /* Libraries */ = {
@@ -535,18 +537,18 @@
 					"/usr/local/include/atk-1.0",
 					"/usr/local/lib/glib-2.0/include",
 				);
-				INFOPLIST_FILE = SwiftGtk/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/lib,
 				);
-				MODULEMAP_PRIVATE_FILE = "$(SRCROOT)/SwiftGtk/module.private.modulemap";
+				MODULEMAP_PRIVATE_FILE = "$(SRCROOT)/Sources/module.private.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tomaslinhart.SwiftGtk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/SwiftGtk/";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -572,18 +574,18 @@
 					"/usr/local/include/atk-1.0",
 					"/usr/local/lib/glib-2.0/include",
 				);
-				INFOPLIST_FILE = SwiftGtk/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/lib,
 				);
-				MODULEMAP_PRIVATE_FILE = "$(SRCROOT)/SwiftGtk/module.private.modulemap";
+				MODULEMAP_PRIVATE_FILE = "$(SRCROOT)/Sources/module.private.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tomaslinhart.SwiftGtk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/SwiftGtk/";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/";
 			};
 			name = Release;
 		};
