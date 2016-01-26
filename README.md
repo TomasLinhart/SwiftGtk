@@ -36,7 +36,7 @@ let package = Package(
 )
 ```
 
-Whenever you build you need to include headers for CGtk. Check [Makefile](Makefile) how it is done and copy the makefile into your project so you can easily reference all your headers. In case you use other platform than Ubuntu 15.04 or Mac OS X with homebrew you might need to change the paths.
+Whenever you build you need to include headers for CGtk. Check [Makefile](Makefile) how it is done and copy the makefile into your project so you can easily reference all your headers. In case you use other platform than Ubuntu 15.10 or Mac OS X with homebrew you might need to change the paths.
 
 ## Demo
 
