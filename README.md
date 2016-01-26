@@ -10,7 +10,27 @@ You need to have Gtk+3 installed on your machine, all paths are already configur
 brew install gtk+3
 ```
 
-It works with Swift version 2.1.1 and with Swift 2.2 (build from 31.12.2015).
+It works with Swift 2.2 and higher (tested with build from 25.01.2016).
+
+## Installation
+
+SwiftGtk supports [Swift Package Manager](https://github.com/apple/swift-package-manager) so you only need to add SwiftGtk to your `Package.swift`.
+
+```swift
+import PackageDescription
+
+let package = Package(
+    dependencies: [
+        .Package(url: "https://github.com/TomasLinhart/SwiftGtk", majorVersion: 0, minor: 1)
+    ]
+)
+```
+
+Whenever you build you need to include headers for CGtk.
+
+```bash
+swift build -Xcc -I/usr/local/include/cairo -Xcc -I/usr/local/include/gtk-3.0 -Xcc -I/usr/local/include/glib-2.0/ -Xcc -I/usr/local/include/pango-1.0 -Xcc -I/usr/local/include/gdk-pixbuf-2.0 -Xcc -I/usr/local/include/atk-1.0 -Xcc -I/usr/local/lib/glib-2.0/include
+```
 
 ## Demo
 
@@ -37,8 +57,6 @@ app.run { window in
     window.add(button)
 }
 ```
-
-
 
 ## License
 
