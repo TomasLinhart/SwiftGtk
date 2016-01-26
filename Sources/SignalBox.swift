@@ -3,7 +3,7 @@
 //
 
 protocol SignalBox {
-    typealias CallbackType
+    associatedtype CallbackType
     
     var callback: CallbackType { get }
     
