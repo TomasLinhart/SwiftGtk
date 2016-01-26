@@ -11,7 +11,8 @@ build:
 endif
 
 run: build
-	.build/debug/SwiftGtkDemo
+	cp Resources/* .build/debug/
+	cd ".build/debug" && ./SwiftGtkDemo
 
 clean:
 	rm -rf .build Packages
