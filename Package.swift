@@ -3,6 +3,6 @@ import PackageDescription
 let package = Package(
   name:  "SwiftGtk",
   dependencies: [
-    .Package(url:  "./CGtk", majorVersion: 1)
+    .Package(url:  "https://github.com/TomasLinhart/CGtk-OSX", majorVersion: 1)
   ]
 )
