@@ -64,6 +64,8 @@ app.run { window in
 }
 ```
 
+![](Screenshots/Linux.png)
+
 ## License
 
 All code is licensed under MIT license.
