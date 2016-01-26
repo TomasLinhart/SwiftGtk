@@ -204,7 +204,7 @@
 		78E163FA1B405BB3008A7CEC /* SwiftGtkDemo */ = {
 			isa = PBXGroup;
 			children = (
-				78FDFF091C3C872A00A0859B /* GTK.png */,
+				78F979A41C583D2B00DF6D1D /* Resources */,
 				78E163FB1B405BB3008A7CEC /* main.swift */,
 			);
 			name = SwiftGtkDemo;
@@ -249,6 +249,15 @@
 				78FDFF0E1C3C87AF00A0859B /* Image.swift */,
 			);
 			name = Widgets;
+			sourceTree = "<group>";
+		};
+		78F979A41C583D2B00DF6D1D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				78FDFF091C3C872A00A0859B /* GTK.png */,
+			);
+			name = Resources;
+			path = ../Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
