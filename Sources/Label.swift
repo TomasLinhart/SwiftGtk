@@ -13,10 +13,10 @@ public class Label: Widget {
             widgetPointer = gtk_label_new(nil)
         }
     }
-    
+
     public var text: String? {
         get {
-            return String.fromCString(gtk_label_get_text(UnsafeMutablePointer(widgetPointer)))
+            return String.init(validatingUTF8: gtk_label_get_text(UnsafeMutablePointer(widgetPointer)))
         }
         set {
             if let text = newValue {
@@ -26,7 +26,7 @@ public class Label: Widget {
             }
         }
     }
-    
+
     public var selectable: Bool {
         get {
             return gtk_label_get_selectable(UnsafeMutablePointer(widgetPointer)) == 1
