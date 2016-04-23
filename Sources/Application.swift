@@ -21,7 +21,7 @@ public class Application {
             app.activate()
         }
 
-        connectSignal(applicationPointer, name: "activate", data: unsafeAddress(of: self), handler: unsafeBitCast(_: handler, to: GCallback.self))
+        connectSignal(instance:applicationPointer, name: "activate", data: unsafeAddress(of: self), handler: unsafeBitCast(_: handler, to: GCallback.self))
         let status = g_application_run(UnsafeMutablePointer(applicationPointer), 0, nil)
         g_object_unref(applicationPointer)
         return Int(status)

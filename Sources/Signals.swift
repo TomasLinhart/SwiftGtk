@@ -7,7 +7,7 @@ import CGtk
 enum ConnectFlags {
     case After
     case Swapped
-    
+
     private func toGConnectFlags() -> GConnectFlags {
         switch self {
         case .After:
@@ -17,6 +17,7 @@ enum ConnectFlags {
         }
     }
 }
+
 
 func connectSignal<T>(instance: UnsafeMutablePointer<T>, name: String, data: UnsafePointer<Void>, connectFlags: ConnectFlags = .After, handler: GCallback) -> UInt {
     return g_signal_connect_data(instance, name, handler, UnsafeMutablePointer(data), nil, connectFlags.toGConnectFlags())

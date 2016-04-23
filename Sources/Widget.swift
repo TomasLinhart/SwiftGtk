@@ -6,7 +6,7 @@ import CGtk
 
 public class Widget {
     private var signals: [(UInt, Any)] = []
-    var widgetPointer: UnsafeMutablePointer<GtkWidget>
+    var widgetPointer: UnsafeMutablePointer<GtkWidget>?
 
     public weak var parentWidget: Widget? {
         willSet {
@@ -32,7 +32,9 @@ public class Widget {
 
     private func removeSignals() {
         for (handlerId, _) in signals {
-            disconnectSignal(widgetPointer, handlerId: handlerId)
+            if let widget = widgetPointer {
+                disconnectSignal(instance: widget, handlerId: handlerId)
+            }
         }
 
         signals = []
@@ -54,9 +56,11 @@ public class Widget {
             box.callback()
         }
 
-        let handlerId = connectSignal(widgetPointer, name: name, data: unsafeAddress(of: box), handler: unsafeBitCast(_: handler, to: GCallback.self))
+        if let widget = widgetPointer {
+            let handlerId = connectSignal(instance: widget, name: name, data: unsafeAddress(of: box), handler: unsafeBitCast(_: handler, to: GCallback.self))
+            signals.append((handlerId, box))
+        }
 
-        signals.append((handlerId, box))
     }
 
     func addSignal(name: String, callback: SignalCallbackOne) {
@@ -66,9 +70,11 @@ public class Widget {
             box.callback(pointer)
         }
 
-        let handlerId = connectSignal(widgetPointer, name: name, data: unsafeAddress(of: box), handler: unsafeBitCast(_: handler, to: GCallback.self))
+        if let widget = widgetPointer {
+            let handlerId = connectSignal(instance: widget, name: name, data: unsafeAddress(of: box), handler: unsafeBitCast(_: handler, to: GCallback.self))
+            signals.append((handlerId, box))
+        }
 
-        signals.append((handlerId, box))
     }
 
     func addSignal(name: String, callback: SignalCallbackTwo) {
@@ -78,9 +84,11 @@ public class Widget {
             box.callback(pointer1, pointer2)
         }
 
-        let handlerId = connectSignal(widgetPointer, name: name, data: unsafeAddress(of: box), handler: unsafeBitCast(_: handler, to: GCallback.self))
+        if let widget = widgetPointer {
+          let handlerId = connectSignal(instance:widget, name: name, data: unsafeAddress(of: box), handler: unsafeBitCast(_: handler, to: GCallback.self))
 
-        signals.append((handlerId, box))
+          signals.append((handlerId, box))
+        }
     }
 
     func addSignal(name: String, callback: SignalCallbackThree) {
@@ -90,9 +98,11 @@ public class Widget {
             box.callback(pointer1, pointer2, pointer3)
         }
 
-        let handlerId = connectSignal(widgetPointer, name: name, data: unsafeAddress(of: box), handler: unsafeBitCast(_: handler, to: GCallback.self))
+        if let widget = widgetPointer {
+          let handlerId = connectSignal(instance:widget, name: name, data: unsafeAddress(of: box), handler: unsafeBitCast(_: handler, to: GCallback.self))
 
-        signals.append((handlerId, box))
+          signals.append((handlerId, box))
+        }
     }
 
     func addSignal(name: String, callback: SignalCallbackFour) {
@@ -102,9 +112,11 @@ public class Widget {
             box.callback(pointer1, pointer2, pointer3, pointer4)
         }
 
-        let handlerId = connectSignal(widgetPointer, name: name, data: unsafeAddress(of: box), handler: unsafeBitCast(_: handler, to: GCallback.self))
+        if let widget = widgetPointer {
+          let handlerId = connectSignal(instance:widget, name: name, data: unsafeAddress(of: box), handler: unsafeBitCast(_: handler, to: GCallback.self))
 
-        signals.append((handlerId, box))
+          signals.append((handlerId, box))
+        }
     }
 
     func addSignal(name: String, callback: SignalCallbackFive) {
@@ -114,9 +126,11 @@ public class Widget {
             box.callback(pointer1, pointer2, pointer3, pointer4, pointer5)
         }
 
-        let handlerId = connectSignal(widgetPointer, name: name, data: unsafeAddress(of: box), handler: unsafeBitCast(_: handler, to: GCallback.self))
+        if let widget = widgetPointer {
+          let handlerId = connectSignal(instance:widget, name: name, data: unsafeAddress(of: box), handler: unsafeBitCast(_: handler, to: GCallback.self))
 
-        signals.append((handlerId, box))
+          signals.append((handlerId, box))
+        }
     }
 
     func addSignal(name: String, callback: SignalCallbackSix) {
@@ -126,9 +140,11 @@ public class Widget {
             box.callback(pointer1, pointer2, pointer3, pointer4, pointer5, pointer6)
         }
 
-        let handlerId = connectSignal(widgetPointer, name: name, data: unsafeAddress(of: box), handler: unsafeBitCast(_: handler, to: GCallback.self))
+        if let widget = widgetPointer {
+          let handlerId = connectSignal(instance:widget, name: name, data: unsafeAddress(of: box), handler: unsafeBitCast(_: handler, to: GCallback.self))
 
-        signals.append((handlerId, box))
+          signals.append((handlerId, box))
+        }
     }
 
     public func showAll() {
