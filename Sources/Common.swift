@@ -21,3 +21,24 @@ extension Int {
         return self >= 1
     }
 }
+
+extension UnsafeMutablePointer {
+    func cast<T>() -> UnsafeMutablePointer<T> {
+        let pointer = UnsafeRawPointer(self).bindMemory(to: T.self, capacity: 1)
+        return UnsafeMutablePointer<T>(mutating: pointer)
+    }
+}
+
+extension UnsafeRawPointer {
+    func cast<T>() -> UnsafeMutablePointer<T> {
+        let pointer = UnsafeRawPointer(self).bindMemory(to: T.self, capacity: 1)
+        return UnsafeMutablePointer<T>(mutating: pointer)
+    }
+}
+
+extension UnsafeMutableRawPointer {
+    func cast<T>() -> UnsafeMutablePointer<T> {
+        let pointer = UnsafeRawPointer(self).bindMemory(to: T.self, capacity: 1)
+        return UnsafeMutablePointer<T>(mutating: pointer)
+    }
+}

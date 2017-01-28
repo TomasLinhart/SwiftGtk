@@ -4,19 +4,19 @@
 
 import CGtk
 
-public class Container: Widget {
-    private (set) var widgets: [Widget] = []
+open class Container: Widget {
+    private(set) var widgets: [Widget] = []
     
-    public func add(widget: Widget) {
+    public func add(_ widget: Widget) {
         widgets.append(widget)
         widget.parentWidget = self
-        gtk_container_add(UnsafeMutablePointer(widgetPointer), widget.widgetPointer)
+        gtk_container_add(castedPointer(), widget.widgetPointer)
     }
     
-    public func remove(widget: Widget) {
-        if let index = widgets.indexOf({ $0 === widget }) {
-            gtk_container_remove(UnsafeMutablePointer(widgetPointer), widget.widgetPointer)
-            widgets.removeAtIndex(index)
+    public func remove(_ widget: Widget) {
+        if let index = widgets.index(where: { $0 === widget }) {
+            gtk_container_remove(castedPointer(), widget.widgetPointer)
+            widgets.remove(at: index)
             widget.parentWidget = nil
         }
     }

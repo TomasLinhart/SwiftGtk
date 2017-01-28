@@ -5,27 +5,29 @@
 import CGtk
 
 enum ConnectFlags {
-    case After
-    case Swapped
+    case after
+    case swapped
     
-    private func toGConnectFlags() -> GConnectFlags {
+    fileprivate func toGConnectFlags() -> GConnectFlags {
         switch self {
-        case .After:
+        case .after:
             return G_CONNECT_AFTER
-        case .Swapped:
+        case .swapped:
             return G_CONNECT_SWAPPED
         }
     }
 }
 
-func connectSignal<T>(instance: UnsafeMutablePointer<T>, name: String, data: UnsafePointer<Void>, connectFlags: ConnectFlags = .After, handler: GCallback) -> UInt {
-    return g_signal_connect_data(instance, name, handler, UnsafeMutablePointer(data), nil, connectFlags.toGConnectFlags())
+@discardableResult
+func connectSignal<T>(_ instance: UnsafeMutablePointer<T>?, name: String, data: UnsafeRawPointer, connectFlags: ConnectFlags = .after, handler: @escaping GCallback) -> UInt {
+    return g_signal_connect_data(instance, name, handler, data.cast(), nil, connectFlags.toGConnectFlags())
 }
 
-func connectSignal<T>(instance: UnsafeMutablePointer<T>, name: String, connectFlags: ConnectFlags = .After, handler: GCallback) -> UInt {
+@discardableResult
+func connectSignal<T>(_ instance: UnsafeMutablePointer<T>?, name: String, connectFlags: ConnectFlags = .after, handler: @escaping GCallback) -> UInt {
     return g_signal_connect_data(instance, name, handler, nil, nil, connectFlags.toGConnectFlags())
 }
 
-func disconnectSignal<T>(instance: UnsafeMutablePointer<T>, handlerId: UInt) {
+func disconnectSignal<T>(_ instance: UnsafeMutablePointer<T>?, handlerId: UInt) {
     g_signal_handler_disconnect(instance, handlerId)
 }

@@ -11,12 +11,12 @@ protocol SignalBox {
 }
 
 typealias SignalCallbackZero = () -> Void
-typealias SignalCallbackOne = (UnsafeMutablePointer<Void>) -> Void
-typealias SignalCallbackTwo = (UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>) -> Void
-typealias SignalCallbackThree = (UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>) -> Void
-typealias SignalCallbackFour = (UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>) -> Void
-typealias SignalCallbackFive = (UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>) -> Void
-typealias SignalCallbackSix = (UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>) -> Void
+typealias SignalCallbackOne = (UnsafeMutableRawPointer) -> Void
+typealias SignalCallbackTwo = (UnsafeMutableRawPointer, UnsafeMutableRawPointer) -> Void
+typealias SignalCallbackThree = (UnsafeMutableRawPointer, UnsafeMutableRawPointer, UnsafeMutableRawPointer) -> Void
+typealias SignalCallbackFour = (UnsafeMutableRawPointer, UnsafeMutableRawPointer, UnsafeMutableRawPointer, UnsafeMutableRawPointer) -> Void
+typealias SignalCallbackFive = (UnsafeMutableRawPointer, UnsafeMutableRawPointer, UnsafeMutableRawPointer, UnsafeMutableRawPointer, UnsafeMutableRawPointer) -> Void
+typealias SignalCallbackSix = (UnsafeMutableRawPointer, UnsafeMutableRawPointer, UnsafeMutableRawPointer, UnsafeMutableRawPointer, UnsafeMutableRawPointer, UnsafeMutableRawPointer) -> Void
 
 /// Provides a box that captures a callback for a signal so it makes easier to add signals.
 class SignalBoxZero: SignalBox {
@@ -24,7 +24,7 @@ class SignalBoxZero: SignalBox {
     
     let callback: CallbackType
     
-    required init(callback: CallbackType) {
+    required init(callback: @escaping CallbackType) {
         self.callback = callback
     }
 }
@@ -34,7 +34,7 @@ class SignalBoxOne: SignalBox {
     
     let callback: CallbackType
     
-    required init(callback: CallbackType) {
+    required init(callback: @escaping CallbackType) {
         self.callback = callback
     }
 }
@@ -44,7 +44,7 @@ class SignalBoxTwo: SignalBox {
     
     let callback: CallbackType
     
-    required init(callback: CallbackType) {
+    required init(callback: @escaping CallbackType) {
         self.callback = callback
     }
 }
@@ -54,7 +54,7 @@ class SignalBoxThree: SignalBox {
     
     let callback: CallbackType
     
-    required init(callback: CallbackType) {
+    required init(callback: @escaping CallbackType) {
         self.callback = callback
     }
 }
@@ -64,7 +64,7 @@ class SignalBoxFour: SignalBox {
     
     let callback: CallbackType
     
-    required init(callback: CallbackType) {
+    required init(callback: @escaping CallbackType) {
         self.callback = callback
     }
 }
@@ -74,7 +74,7 @@ class SignalBoxFive: SignalBox {
     
     let callback: CallbackType
     
-    required init(callback: CallbackType) {
+    required init(callback: @escaping CallbackType) {
         self.callback = callback
     }
 }
@@ -84,7 +84,7 @@ class SignalBoxSix: SignalBox {
     
     let callback: CallbackType
     
-    required init(callback: CallbackType) {
+    required init(callback: @escaping CallbackType) {
         self.callback = callback
     }
 }

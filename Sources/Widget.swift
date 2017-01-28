@@ -4,9 +4,9 @@
 
 import CGtk
 
-public class Widget {    
+open class Widget {
     private var signals: [(UInt, Any)] = []
-    var widgetPointer: UnsafeMutablePointer<GtkWidget>
+    var widgetPointer: UnsafeMutablePointer<GtkWidget>?
     
     public weak var parentWidget: Widget? {
         willSet {
@@ -43,90 +43,90 @@ public class Widget {
     }
     
     func didMoveFromParent() {
-        
+
     }
     
     /// Adds a signal that is not carrying any additional information.
-    func addSignal(name: String, callback: SignalCallbackZero) {
+    func addSignal(name: String, callback: @escaping SignalCallbackZero) {
         let box = SignalBoxZero(callback: callback)
-        let handler: @convention(c) (UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>) -> Void = { sender, data in
-            let box = unsafeBitCast(data, SignalBoxZero.self)
+        let handler: @convention(c) (UnsafeMutableRawPointer, UnsafeMutableRawPointer) -> Void = { sender, data in
+            let box = unsafeBitCast(data, to: SignalBoxZero.self)
             box.callback()
         }
         
-        let handlerId = connectSignal(widgetPointer, name: name, data: unsafeAddressOf(box), handler: unsafeBitCast(handler, GCallback.self))
+        let handlerId = connectSignal(widgetPointer, name: name, data: Unmanaged.passUnretained(box).toOpaque(), handler: unsafeBitCast(handler, to: GCallback.self))
         
         signals.append((handlerId, box))
     }
     
-    func addSignal(name: String, callback: SignalCallbackOne) {
+    func addSignal(name: String, callback: @escaping SignalCallbackOne) {
         let box = SignalBoxOne(callback: callback)
-        let handler: @convention(c) (UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>) -> Void = { sender, pointer, data in
-            let box = unsafeBitCast(data, SignalBoxOne.self)
+        let handler: @convention(c) (UnsafeMutableRawPointer, UnsafeMutableRawPointer, UnsafeMutableRawPointer) -> Void = { sender, pointer, data in
+            let box = unsafeBitCast(data, to: SignalBoxOne.self)
             box.callback(pointer)
         }
         
-        let handlerId = connectSignal(widgetPointer, name: name, data: unsafeAddressOf(box), handler: unsafeBitCast(handler, GCallback.self))
+        let handlerId = connectSignal(widgetPointer, name: name, data: Unmanaged.passUnretained(box).toOpaque(), handler: unsafeBitCast(handler, to: GCallback.self))
         
         signals.append((handlerId, box))
     }
     
-    func addSignal(name: String, callback: SignalCallbackTwo) {
+    func addSignal(name: String, callback: @escaping SignalCallbackTwo) {
         let box = SignalBoxTwo(callback: callback)
-        let handler: @convention(c) (UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>) -> Void = { sender, pointer1, pointer2, data in
-            let box = unsafeBitCast(data, SignalBoxTwo.self)
+        let handler: @convention(c) (UnsafeMutableRawPointer, UnsafeMutableRawPointer, UnsafeMutableRawPointer, UnsafeMutableRawPointer) -> Void = { sender, pointer1, pointer2, data in
+            let box = unsafeBitCast(data, to: SignalBoxTwo.self)
             box.callback(pointer1, pointer2)
         }
         
-        let handlerId = connectSignal(widgetPointer, name: name, data: unsafeAddressOf(box), handler: unsafeBitCast(handler, GCallback.self))
+        let handlerId = connectSignal(widgetPointer, name: name, data: Unmanaged.passUnretained(box).toOpaque(), handler: unsafeBitCast(handler, to: GCallback.self))
         
         signals.append((handlerId, box))
     }
     
-    func addSignal(name: String, callback: SignalCallbackThree) {
+    func addSignal(name: String, callback: @escaping SignalCallbackThree) {
         let box = SignalBoxThree(callback: callback)
-        let handler: @convention(c) (UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>) -> Void = { sender, pointer1, pointer2, pointer3, data in
-            let box = unsafeBitCast(data, SignalBoxThree.self)
+        let handler: @convention(c) (UnsafeMutableRawPointer, UnsafeMutableRawPointer, UnsafeMutableRawPointer, UnsafeMutableRawPointer, UnsafeMutableRawPointer) -> Void = { sender, pointer1, pointer2, pointer3, data in
+            let box = unsafeBitCast(data, to: SignalBoxThree.self)
             box.callback(pointer1, pointer2, pointer3)
         }
         
-        let handlerId = connectSignal(widgetPointer, name: name, data: unsafeAddressOf(box), handler: unsafeBitCast(handler, GCallback.self))
+        let handlerId = connectSignal(widgetPointer, name: name, data: Unmanaged.passUnretained(box).toOpaque(), handler: unsafeBitCast(handler, to: GCallback.self))
         
         signals.append((handlerId, box))
     }
     
-    func addSignal(name: String, callback: SignalCallbackFour) {
+    func addSignal(name: String, callback: @escaping SignalCallbackFour) {
         let box = SignalBoxFour(callback: callback)
-        let handler: @convention(c) (UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>) -> Void = { sender, pointer1, pointer2, pointer3, pointer4, data in
-            let box = unsafeBitCast(data, SignalBoxFour.self)
+        let handler: @convention(c) (UnsafeMutableRawPointer, UnsafeMutableRawPointer, UnsafeMutableRawPointer, UnsafeMutableRawPointer, UnsafeMutableRawPointer, UnsafeMutableRawPointer) -> Void = { sender, pointer1, pointer2, pointer3, pointer4, data in
+            let box = unsafeBitCast(data, to: SignalBoxFour.self)
             box.callback(pointer1, pointer2, pointer3, pointer4)
         }
         
-        let handlerId = connectSignal(widgetPointer, name: name, data: unsafeAddressOf(box), handler: unsafeBitCast(handler, GCallback.self))
+        let handlerId = connectSignal(widgetPointer, name: name, data: Unmanaged.passUnretained(box).toOpaque(), handler: unsafeBitCast(handler, to: GCallback.self))
         
         signals.append((handlerId, box))
     }
     
-    func addSignal(name: String, callback: SignalCallbackFive) {
+    func addSignal(name: String, callback: @escaping SignalCallbackFive) {
         let box = SignalBoxFive(callback: callback)
-        let handler: @convention(c) (UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>) -> Void = { sender, pointer1, pointer2, pointer3, pointer4, pointer5, data in
-            let box = unsafeBitCast(data, SignalBoxFive.self)
+        let handler: @convention(c) (UnsafeMutableRawPointer, UnsafeMutableRawPointer, UnsafeMutableRawPointer, UnsafeMutableRawPointer, UnsafeMutableRawPointer, UnsafeMutableRawPointer, UnsafeMutableRawPointer) -> Void = { sender, pointer1, pointer2, pointer3, pointer4, pointer5, data in
+            let box = unsafeBitCast(data, to: SignalBoxFive.self)
             box.callback(pointer1, pointer2, pointer3, pointer4, pointer5)
         }
         
-        let handlerId = connectSignal(widgetPointer, name: name, data: unsafeAddressOf(box), handler: unsafeBitCast(handler, GCallback.self))
+        let handlerId = connectSignal(widgetPointer, name: name, data: Unmanaged.passUnretained(box).toOpaque(), handler: unsafeBitCast(handler, to: GCallback.self))
         
         signals.append((handlerId, box))
     }
     
-    func addSignal(name: String, callback: SignalCallbackSix) {
+    func addSignal(name: String, callback: @escaping SignalCallbackSix) {
         let box = SignalBoxSix(callback: callback)
-        let handler: @convention(c) (UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>, UnsafeMutablePointer<Void>) -> Void = { sender, pointer1, pointer2, pointer3, pointer4, pointer5, pointer6, data in
-            let box = unsafeBitCast(data, SignalBoxSix.self)
+        let handler: @convention(c) (UnsafeMutableRawPointer, UnsafeMutableRawPointer, UnsafeMutableRawPointer, UnsafeMutableRawPointer, UnsafeMutableRawPointer, UnsafeMutableRawPointer, UnsafeMutableRawPointer, UnsafeMutableRawPointer) -> Void = { sender, pointer1, pointer2, pointer3, pointer4, pointer5, pointer6, data in
+            let box = unsafeBitCast(data, to: SignalBoxSix.self)
             box.callback(pointer1, pointer2, pointer3, pointer4, pointer5, pointer6)
         }
         
-        let handlerId = connectSignal(widgetPointer, name: name, data: unsafeAddressOf(box), handler: unsafeBitCast(handler, GCallback.self))
+        let handlerId = connectSignal(widgetPointer, name: name, data: Unmanaged.passUnretained(box).toOpaque(), handler: unsafeBitCast(handler, to: GCallback.self))
         
         signals.append((handlerId, box))
     }
@@ -138,7 +138,7 @@ public class Widget {
     public func showNow() {
         gtk_widget_show_now(widgetPointer)
     }
-    
+
     public func show() {
         gtk_widget_show(widgetPointer)
     }

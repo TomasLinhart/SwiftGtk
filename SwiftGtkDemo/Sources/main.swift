@@ -10,7 +10,7 @@ app.run { window in
     window.defaultSize = Size(width: 400, height: 400)
     window.resizable = true
     
-    let buttonBox = ButtonBox(orientation: .Vertical)
+    let buttonBox = ButtonBox(orientation: .vertical)
 
     let label = Label()
     label.selectable = true
@@ -21,7 +21,7 @@ app.run { window in
     button.clicked = { [unowned label] _ in
         label.text = "Oh, you pressed the button."
         
-        let newWindow = Window(windowType: .TopLevel)
+        let newWindow = Window(windowType: .topLevel)
         newWindow.title = "Just a window"
         newWindow.defaultSize = Size(width: 200, height: 200)
         
@@ -35,7 +35,7 @@ app.run { window in
     
     let calendarButton = Button(label: "Calendar")
     calendarButton.clicked = { _ in
-        let newWindow = Window(windowType: .TopLevel)
+        let newWindow = Window(windowType: .topLevel)
         newWindow.title = "Just a window"
         newWindow.defaultSize = Size(width: 200, height: 200)
         
@@ -52,7 +52,7 @@ app.run { window in
     
     let imageButton = Button(label: "Image")
     imageButton.clicked = { _ in
-        let newWindow = Window(windowType: .TopLevel)
+        let newWindow = Window(windowType: .topLevel)
         newWindow.title = "Just a window"
         newWindow.defaultSize = Size(width: 200, height: 200)
         
@@ -62,7 +62,7 @@ app.run { window in
         
         newWindow.showAll()
     }
-    
+
     buttonBox.add(imageButton)
     
     let textView = TextView()
