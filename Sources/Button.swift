@@ -18,21 +18,21 @@ public class Button: Bin {
     override func didMoveToParent() {
         super.didMoveToParent()
         
-        addSignal("clicked") { [unowned self] in self.clicked?(self) }
+        addSignal(name: "clicked") { [unowned self] in self.clicked?(self) }
     }
     
     public var label: String? {
         get {
-            return String.fromCString(gtk_button_get_label(UnsafeMutablePointer(widgetPointer)))
+            return String(cString: gtk_button_get_label(castedPointer()))
         }
         set {
             if let title = newValue {
-                gtk_button_set_label(UnsafeMutablePointer(widgetPointer), title)
+                gtk_button_set_label(castedPointer(), title)
             } else {
-                gtk_button_set_label(UnsafeMutablePointer(widgetPointer), nil)
+                gtk_button_set_label(castedPointer(), nil)
             }
         }
     }
-    
-    public var clicked: (Button -> Void)?
+
+    public var clicked: ((Button) -> Void)?
 }

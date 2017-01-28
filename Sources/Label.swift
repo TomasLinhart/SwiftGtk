@@ -16,23 +16,23 @@ public class Label: Widget {
     
     public var text: String? {
         get {
-            return String.fromCString(gtk_label_get_text(UnsafeMutablePointer(widgetPointer)))
+            return String(cString: gtk_label_get_text(castedPointer()))
         }
         set {
             if let text = newValue {
-                gtk_label_set_text(UnsafeMutablePointer(widgetPointer), text)
+                gtk_label_set_text(castedPointer(), text)
             } else {
-                gtk_label_set_text(UnsafeMutablePointer(widgetPointer), nil)
+                gtk_label_set_text(castedPointer(), nil)
             }
         }
     }
     
     public var selectable: Bool {
         get {
-            return gtk_label_get_selectable(UnsafeMutablePointer(widgetPointer)) == 1
+            return gtk_label_get_selectable(castedPointer()) == 1
         }
         set {
-            gtk_label_set_selectable(UnsafeMutablePointer(widgetPointer), newValue ? 1 : 0)
+            gtk_label_set_selectable(castedPointer(), newValue ? 1 : 0)
         }
     }
 }

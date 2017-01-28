@@ -6,33 +6,33 @@ import CGtk
 
 public class Window: Bin {
     public enum WindowType {
-        case TopLevel
-        case PopUp
+        case topLevel
+        case popUp
         
-        private func toGtkWindowType() -> GtkWindowType {
+        fileprivate func toGtkWindowType() -> GtkWindowType {
             switch self {
-            case .TopLevel:
+            case .topLevel:
                 return GTK_WINDOW_TOPLEVEL
-            case .PopUp:
+            case .popUp:
                 return GTK_WINDOW_POPUP
             }
         }
     }
     
-    public init(windowType: WindowType = .TopLevel) {
+    public init(windowType: WindowType = .topLevel) {
         super.init()   
         widgetPointer = gtk_window_new(windowType.toGtkWindowType())
     }
     
     public var title: String? {
         get {
-            return String.fromCString(gtk_window_get_title(UnsafeMutablePointer(widgetPointer)))
+            return String(cString: gtk_window_get_title(castedPointer()))
         }
         set {
             if let title = newValue {
-                gtk_window_set_title(UnsafeMutablePointer(widgetPointer), title)
+                gtk_window_set_title(castedPointer(), title)
             } else {
-                gtk_window_set_title(UnsafeMutablePointer(widgetPointer), nil)
+                gtk_window_set_title(castedPointer(), nil)
             }
         }
     }
@@ -41,21 +41,21 @@ public class Window: Bin {
         get {
             var width: Int32 = 0
             var height: Int32 = 0
-            gtk_window_get_default_size(UnsafeMutablePointer(widgetPointer), &width, &height)
+            gtk_window_get_default_size(castedPointer(), &width, &height)
 
             return Size(width: Int(width), height: Int(height))
         }
         set (size) {
-            gtk_window_set_default_size(UnsafeMutablePointer(widgetPointer), Int32(size.width), Int32(size.height))
+            gtk_window_set_default_size(castedPointer(), Int32(size.width), Int32(size.height))
         }
     }
     
     public var resizable: Bool {
         get {
-            return gtk_window_get_resizable(UnsafeMutablePointer(widgetPointer)).toBool()
+            return gtk_window_get_resizable(castedPointer()).toBool()
         }
         set {
-            gtk_window_set_resizable(UnsafeMutablePointer(widgetPointer), newValue.toGBoolean())
+            gtk_window_set_resizable(castedPointer(), newValue.toGBoolean())
         }
     }
 }

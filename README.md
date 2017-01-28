@@ -4,7 +4,7 @@ SwiftGtk is a experimental Gtk+ binding for Swift that tries to make usage of Gt
 
 ## Dependencies
 
-You need to have Swift 2.2 or higher installed on your computer (tested with build from 25.01.2016) and depending on your platform you need to install Gtk+3. On Mac OS X you also build the project with Xcode.
+You need to have Swift 3.0 or higher installed on your computer (tested with 3.0.2 bundled with Xcode 8.2.1) and depending on your platform you need to install Gtk+3. On Mac OS X you also build the project with Xcode.
 
 ### Mac OS X
 
@@ -51,7 +51,7 @@ app.run { window in
 
     let button = Button(label: "Press Me")
     button.clicked = { _ in
-        let newWindow = Window(windowType: .TopLevel)
+        let newWindow = Window(windowType: .topLevel)
         newWindow.title = "Just a window"
         newWindow.defaultSize = Size(width: 200, height: 200)
         let labelPressed = Label(text: "Oh, you pressed the button.")

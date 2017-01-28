@@ -6,20 +6,20 @@ import CGtk
 
 public class ButtonBox: Box {
     public enum Orientation {
-        case Horizontal
-        case Vertical
+        case horizontal
+        case vertical
         
-        private func toGtkOrientation() -> GtkOrientation {
+        fileprivate func toGtkOrientation() -> GtkOrientation {
             switch self {
-            case .Horizontal:
+            case .horizontal:
                 return GTK_ORIENTATION_HORIZONTAL
-            case .Vertical:
+            case .vertical:
                 return GTK_ORIENTATION_VERTICAL
             }
         }
     }
     
-    public init(orientation: Orientation = .Horizontal) {
+    public init(orientation: Orientation = .horizontal) {
         super.init()
         widgetPointer = gtk_button_box_new(orientation.toGtkOrientation())
     }

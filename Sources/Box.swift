@@ -4,6 +4,6 @@
 
 import CGtk
 
-public class Box: Container {
+open class Box: Container {
 
 }
