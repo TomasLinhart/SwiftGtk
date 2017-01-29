@@ -30,6 +30,7 @@ SwiftGtk supports [Swift Package Manager](https://github.com/apple/swift-package
 import PackageDescription
 
 let package = Package(
+    name: "SwiftGtkApplication",
     dependencies: [
         .Package(url: "https://github.com/TomasLinhart/SwiftGtk", majorVersion: 0, minor: 2)
     ]
