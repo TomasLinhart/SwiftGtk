@@ -5,7 +5,7 @@
 import CGtk
 
 open class Container: Widget {
-    private(set) var widgets: [Widget] = []
+    var widgets: [Widget] = []
 
     public func add(_ widget: Widget) {
         widgets.append(widget)
