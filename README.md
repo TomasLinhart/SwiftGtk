@@ -43,6 +43,8 @@ Whenever you build you need to include headers for CGtk. Check [Makefile](Makefi
 Following code will create a window with a button that when it is pressed presents another window.
 
 ```swift
+import SwiftGtk
+
 let app = Application(applicationId: "com.example.application")
 app.run { window in
     window.title = "Hello World"
