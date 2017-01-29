@@ -11,6 +11,6 @@ import PackageDescription
 let package = Package(
   name:  "SwiftGtk",
   dependencies: [
-    .Package(url: gtkUrl, majorVersion: 1)
+    .Package(url: gtkUrl, majorVersion: 1, minor: 1)
   ]
 )
