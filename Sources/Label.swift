@@ -13,7 +13,7 @@ public class Label: Widget {
             widgetPointer = gtk_label_new(nil)
         }
     }
-    
+
     public var text: String? {
         get {
             return String(cString: gtk_label_get_text(castedPointer()))
@@ -26,7 +26,7 @@ public class Label: Widget {
             }
         }
     }
-    
+
     public var selectable: Bool {
         get {
             return gtk_label_get_selectable(castedPointer()) == 1

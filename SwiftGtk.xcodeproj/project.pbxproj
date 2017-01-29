@@ -116,6 +116,7 @@
 		78FDFF091C3C872A00A0859B /* GTK.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GTK.png; sourceTree = "<group>"; };
 		78FDFF0E1C3C87AF00A0859B /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		C39D0BA71E3CD80200DFF948 /* Widget+CastedPointer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Widget+CastedPointer.swift"; sourceTree = "<group>"; };
+		C39D0BAB1E3D81E700DFF948 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +165,7 @@
 				78E163E91B405B3A008A7CEC /* SwiftGtkTests */,
 				78E163FA1B405BB3008A7CEC /* SwiftGtkDemo */,
 				78E163DC1B405B3A008A7CEC /* Products */,
+				C39D0BAB1E3D81E700DFF948 /* Package.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -292,6 +294,7 @@
 				78E163D71B405B3A008A7CEC /* Frameworks */,
 				78E163D81B405B3A008A7CEC /* Headers */,
 				78E163D91B405B3A008A7CEC /* Resources */,
+				C39D0BAD1E3D824A00DFF948 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -396,6 +399,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C39D0BAD1E3D824A00DFF948 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		78E163D61B405B3A008A7CEC /* Sources */ = {

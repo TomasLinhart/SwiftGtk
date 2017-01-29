@@ -8,7 +8,7 @@ public class Window: Bin {
     public enum WindowType {
         case topLevel
         case popUp
-        
+
         fileprivate func toGtkWindowType() -> GtkWindowType {
             switch self {
             case .topLevel:
@@ -18,12 +18,12 @@ public class Window: Bin {
             }
         }
     }
-    
+
     public init(windowType: WindowType = .topLevel) {
-        super.init()   
+        super.init()
         widgetPointer = gtk_window_new(windowType.toGtkWindowType())
     }
-    
+
     public var title: String? {
         get {
             return String(cString: gtk_window_get_title(castedPointer()))
@@ -36,7 +36,7 @@ public class Window: Bin {
             }
         }
     }
-    
+
     public var defaultSize: Size {
         get {
             var width: Int32 = 0
@@ -49,7 +49,7 @@ public class Window: Bin {
             gtk_window_set_default_size(castedPointer(), Int32(size.width), Int32(size.height))
         }
     }
-    
+
     public var resizable: Bool {
         get {
             return gtk_window_get_resizable(castedPointer()).toBool()

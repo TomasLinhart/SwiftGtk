@@ -6,13 +6,13 @@ import CGtk
 
 open class Container: Widget {
     private(set) var widgets: [Widget] = []
-    
+
     public func add(_ widget: Widget) {
         widgets.append(widget)
         widget.parentWidget = self
         gtk_container_add(castedPointer(), widget.widgetPointer)
     }
-    
+
     public func remove(_ widget: Widget) {
         if let index = widgets.index(where: { $0 === widget }) {
             gtk_container_remove(castedPointer(), widget.widgetPointer)

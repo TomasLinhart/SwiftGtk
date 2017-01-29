@@ -8,7 +8,7 @@ public class ButtonBox: Box {
     public enum Orientation {
         case horizontal
         case vertical
-        
+
         fileprivate func toGtkOrientation() -> GtkOrientation {
             switch self {
             case .horizontal:
@@ -18,7 +18,7 @@ public class ButtonBox: Box {
             }
         }
     }
-    
+
     public init(orientation: Orientation = .horizontal) {
         super.init()
         widgetPointer = gtk_button_box_new(orientation.toGtkOrientation())

@@ -1,0 +1,3 @@
+disabled_rules:
+  - line_length
+swiftlint_version: 0.16.1

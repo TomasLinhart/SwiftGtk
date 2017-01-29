@@ -7,7 +7,7 @@ import CGtk
 enum ConnectFlags {
     case after
     case swapped
-    
+
     fileprivate func toGConnectFlags() -> GConnectFlags {
         switch self {
         case .after:

@@ -4,9 +4,9 @@
 
 protocol SignalBox {
     associatedtype CallbackType
-    
+
     var callback: CallbackType { get }
-    
+
     init(callback: CallbackType)
 }
 
@@ -21,9 +21,9 @@ typealias SignalCallbackSix = (UnsafeMutableRawPointer, UnsafeMutableRawPointer,
 /// Provides a box that captures a callback for a signal so it makes easier to add signals.
 class SignalBoxZero: SignalBox {
     typealias CallbackType = SignalCallbackZero
-    
+
     let callback: CallbackType
-    
+
     required init(callback: @escaping CallbackType) {
         self.callback = callback
     }
@@ -31,9 +31,9 @@ class SignalBoxZero: SignalBox {
 
 class SignalBoxOne: SignalBox {
     typealias CallbackType = SignalCallbackOne
-    
+
     let callback: CallbackType
-    
+
     required init(callback: @escaping CallbackType) {
         self.callback = callback
     }
@@ -41,9 +41,9 @@ class SignalBoxOne: SignalBox {
 
 class SignalBoxTwo: SignalBox {
     typealias CallbackType = SignalCallbackTwo
-    
+
     let callback: CallbackType
-    
+
     required init(callback: @escaping CallbackType) {
         self.callback = callback
     }
@@ -51,9 +51,9 @@ class SignalBoxTwo: SignalBox {
 
 class SignalBoxThree: SignalBox {
     typealias CallbackType = SignalCallbackThree
-    
+
     let callback: CallbackType
-    
+
     required init(callback: @escaping CallbackType) {
         self.callback = callback
     }
@@ -61,9 +61,9 @@ class SignalBoxThree: SignalBox {
 
 class SignalBoxFour: SignalBox {
     typealias CallbackType = SignalCallbackFour
-    
+
     let callback: CallbackType
-    
+
     required init(callback: @escaping CallbackType) {
         self.callback = callback
     }
@@ -71,9 +71,9 @@ class SignalBoxFour: SignalBox {
 
 class SignalBoxFive: SignalBox {
     typealias CallbackType = SignalCallbackFive
-    
+
     let callback: CallbackType
-    
+
     required init(callback: @escaping CallbackType) {
         self.callback = callback
     }
@@ -81,9 +81,9 @@ class SignalBoxFive: SignalBox {
 
 class SignalBoxSix: SignalBox {
     typealias CallbackType = SignalCallbackSix
-    
+
     let callback: CallbackType
-    
+
     required init(callback: @escaping CallbackType) {
         self.callback = callback
     }

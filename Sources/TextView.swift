@@ -7,18 +7,18 @@ import CGtk
 public class TextView: Container {
     public override init() {
         super.init()
-        
+
         widgetPointer = gtk_text_view_new()
     }
-    
+
     override func didMoveToParent() {
         super.didMoveToParent()
-        
+
         addSignal(name: "backspace") { [unowned self] in self.backspace?(self) }
         addSignal(name: "copy-clipboard") { [unowned self] in self.copyClipboard?(self) }
         addSignal(name: "cut-clipboard") { [unowned self] in self.cutClipboard?(self) }
         addSignal(name: "paste-clipboard") { [unowned self] in self.pasteClipboard?(self) }
-        
+
         addSignal(name: "insert-at-cursor") { [unowned self] (pointer: UnsafeMutableRawPointer) in
             let pointer = UnsafeRawPointer(pointer).bindMemory(to: CChar.self, capacity: 1)
             let string = String(cString: pointer)
@@ -37,7 +37,7 @@ public class TextView: Container {
             self.selectAll?(self, select)
         }
     }
-    
+
     public var editable: Bool {
         get {
             return gtk_text_view_get_editable(castedPointer()).toBool()
@@ -48,7 +48,7 @@ public class TextView: Container {
     }
 
     // MARK: - Signals
-    
+
     public var backspace: ((TextView) -> Void)?
     public var pasteClipboard: ((TextView) -> Void)?
     public var cutClipboard: ((TextView) -> Void)?

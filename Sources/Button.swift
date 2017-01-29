@@ -9,18 +9,18 @@ public class Button: Bin {
         super.init()
         widgetPointer = gtk_button_new()
     }
-    
+
     public init(label: String) {
         super.init()
         widgetPointer = gtk_button_new_with_label(label)
     }
-    
+
     override func didMoveToParent() {
         super.didMoveToParent()
-        
+
         addSignal(name: "clicked") { [unowned self] in self.clicked?(self) }
     }
-    
+
     public var label: String? {
         get {
             return String(cString: gtk_button_get_label(castedPointer()))

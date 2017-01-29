@@ -5,5 +5,5 @@
 import CGtk
 
 open class Bin: Container {
-    
+
 }

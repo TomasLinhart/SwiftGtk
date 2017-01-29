@@ -4,10 +4,10 @@
 
 public struct Size {
     static let zero = Size(width: 0, height: 0)
-    
+
     public var width: Int
     public var height: Int
-    
+
     public init(width: Int = 0, height: Int = 0) {
         self.width = width
         self.height = height
