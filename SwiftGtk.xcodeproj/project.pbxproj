@@ -41,6 +41,7 @@
 		78FDFF081C3C80D400A0859B /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FDFF071C3C80D400A0859B /* Value.swift */; };
 		78FDFF0A1C3C874D00A0859B /* GTK.png in Copy Files */ = {isa = PBXBuildFile; fileRef = 78FDFF091C3C872A00A0859B /* GTK.png */; };
 		78FDFF0F1C3C87AF00A0859B /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FDFF0E1C3C87AF00A0859B /* Image.swift */; };
+		C35A25E51F3FC1DE00EF1048 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C35A25E31F3FC1DE00EF1048 /* Info.plist */; };
 		C39D0BA81E3CD80200DFF948 /* Widget+CastedPointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D0BA71E3CD80200DFF948 /* Widget+CastedPointer.swift */; };
 		C3AEBB971E3E103A009284CC /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AEBB961E3E103A009284CC /* Grid.swift */; };
 		C3AEBB9A1E3E13C6009284CC /* PositionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AEBB991E3E13C6009284CC /* PositionType.swift */; };
@@ -83,7 +84,6 @@
 /* Begin PBXFileReference section */
 		784588981C3B1D2D00FB615A /* Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
 		78E163DB1B405B3A008A7CEC /* SwiftGtk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftGtk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		78E163E01B405B3A008A7CEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78E163E51B405B3A008A7CEC /* SwiftGtkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftGtkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78E163EC1B405B3A008A7CEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78E163F91B405BB3008A7CEC /* SwiftGtkDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftGtkDemo; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,7 +110,6 @@
 		78E164251B405CF6008A7CEC /* Signals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signals.swift; sourceTree = "<group>"; };
 		78E164261B405CF6008A7CEC /* Widget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Widget.swift; sourceTree = "<group>"; };
 		78E164271B405CF6008A7CEC /* Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
-		78E1643E1B4066CE008A7CEC /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		78E1644A1B409078008A7CEC /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		78FDFEFD1C3C3D0100A0859B /* TextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		78FDFEFF1C3C3EEF00A0859B /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
@@ -119,6 +118,8 @@
 		78FDFF071C3C80D400A0859B /* Value.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Value.swift; sourceTree = "<group>"; };
 		78FDFF091C3C872A00A0859B /* GTK.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GTK.png; sourceTree = "<group>"; };
 		78FDFF0E1C3C87AF00A0859B /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		C35A25E31F3FC1DE00EF1048 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C35A25E41F3FC1DE00EF1048 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		C39D0BA71E3CD80200DFF948 /* Widget+CastedPointer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Widget+CastedPointer.swift"; sourceTree = "<group>"; };
 		C39D0BAB1E3D81E700DFF948 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		C3AEBB961E3E103A009284CC /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
@@ -191,13 +192,12 @@
 		78E163DD1B405B3A008A7CEC /* SwiftGtk */ = {
 			isa = PBXGroup;
 			children = (
+				C35A25E21F3FC1DE00EF1048 /* Ancillary Files */,
 				C3AEBB981E3E13BB009284CC /* Enums */,
 				78E164181B405C44008A7CEC /* Libraries */,
 				78E164451B407BBB008A7CEC /* Widgets */,
 				78E164251B405CF6008A7CEC /* Signals.swift */,
 				784588981C3B1D2D00FB615A /* Size.swift */,
-				78E163E01B405B3A008A7CEC /* Info.plist */,
-				78E1643E1B4066CE008A7CEC /* module.modulemap */,
 				78FDFEFF1C3C3EEF00A0859B /* Common.swift */,
 				78FDFF031C3C617E00A0859B /* SignalBox.swift */,
 				78FDFF071C3C80D400A0859B /* Value.swift */,
@@ -274,6 +274,15 @@
 			);
 			name = Resources;
 			path = ../Resources;
+			sourceTree = "<group>";
+		};
+		C35A25E21F3FC1DE00EF1048 /* Ancillary Files */ = {
+			isa = PBXGroup;
+			children = (
+				C35A25E31F3FC1DE00EF1048 /* Info.plist */,
+				C35A25E41F3FC1DE00EF1048 /* module.modulemap */,
+			);
+			path = "Ancillary Files";
 			sourceTree = "<group>";
 		};
 		C39D0BA61E3CD7F100DFF948 /* Extensions */ = {
@@ -409,6 +418,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C35A25E51F3FC1DE00EF1048 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,7 +621,7 @@
 					"/usr/local/include/atk-1.0",
 					"/usr/local/lib/glib-2.0/include",
 				);
-				INFOPLIST_FILE = Sources/Info.plist;
+				INFOPLIST_FILE = "Sources/Ancillary Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -648,7 +658,7 @@
 					"/usr/local/include/atk-1.0",
 					"/usr/local/lib/glib-2.0/include",
 				);
-				INFOPLIST_FILE = Sources/Info.plist;
+				INFOPLIST_FILE = "Sources/Ancillary Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
