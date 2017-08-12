@@ -33,7 +33,7 @@ public class TextView: Container {
 
         addSignal(name: "select-all") { [unowned self] (pointer: UnsafeMutableRawPointer) in
             // We need to get actual value of the pointer because it is not pointer but only integer.
-            let select = unsafeBitCast(pointer, to: Int.self).toBool()
+            let select = Int(bitPattern: pointer).toBool()
             self.selectAll?(self, select)
         }
     }
