@@ -111,7 +111,6 @@
 		78E164261B405CF6008A7CEC /* Widget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Widget.swift; sourceTree = "<group>"; };
 		78E164271B405CF6008A7CEC /* Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
 		78E1643E1B4066CE008A7CEC /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
-		78E164491B40876F008A7CEC /* module.private.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.private.modulemap; sourceTree = "<group>"; };
 		78E1644A1B409078008A7CEC /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		78FDFEFD1C3C3D0100A0859B /* TextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		78FDFEFF1C3C3EEF00A0859B /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
@@ -199,7 +198,6 @@
 				784588981C3B1D2D00FB615A /* Size.swift */,
 				78E163E01B405B3A008A7CEC /* Info.plist */,
 				78E1643E1B4066CE008A7CEC /* module.modulemap */,
-				78E164491B40876F008A7CEC /* module.private.modulemap */,
 				78FDFEFF1C3C3EEF00A0859B /* Common.swift */,
 				78FDFF031C3C617E00A0859B /* SignalBox.swift */,
 				78FDFF071C3C80D400A0859B /* Value.swift */,
@@ -620,7 +618,6 @@
 					"$(inherited)",
 					/usr/local/lib,
 				);
-				MODULEMAP_PRIVATE_FILE = "$(SRCROOT)/Sources/module.private.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tomaslinhart.SwiftGtk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -658,7 +655,6 @@
 					"$(inherited)",
 					/usr/local/lib,
 				);
-				MODULEMAP_PRIVATE_FILE = "$(SRCROOT)/Sources/module.private.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tomaslinhart.SwiftGtk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
