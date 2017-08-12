@@ -41,7 +41,6 @@
 		78FDFF081C3C80D400A0859B /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FDFF071C3C80D400A0859B /* Value.swift */; };
 		78FDFF0A1C3C874D00A0859B /* GTK.png in Copy Files */ = {isa = PBXBuildFile; fileRef = 78FDFF091C3C872A00A0859B /* GTK.png */; };
 		78FDFF0F1C3C87AF00A0859B /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FDFF0E1C3C87AF00A0859B /* Image.swift */; };
-		C35A25E51F3FC1DE00EF1048 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C35A25E31F3FC1DE00EF1048 /* Info.plist */; };
 		C39D0BA81E3CD80200DFF948 /* Widget+CastedPointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D0BA71E3CD80200DFF948 /* Widget+CastedPointer.swift */; };
 		C3AEBB971E3E103A009284CC /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AEBB961E3E103A009284CC /* Grid.swift */; };
 		C3AEBB9A1E3E13C6009284CC /* PositionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AEBB991E3E13C6009284CC /* PositionType.swift */; };
@@ -418,7 +417,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C35A25E51F3FC1DE00EF1048 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
