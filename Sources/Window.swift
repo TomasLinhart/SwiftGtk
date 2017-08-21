@@ -58,4 +58,15 @@ public class Window: Bin {
             gtk_window_set_resizable(castedPointer(), newValue.toGBoolean())
         }
     }
+
+    public var hideTitlebarWhenMaximized: Bool {
+        get { return gtk_window_get_hide_titlebar_when_maximized(castedPointer()).toBool() }
+        set { gtk_window_set_hide_titlebar_when_maximized(castedPointer(), newValue.toGBoolean()) }
+    }
+
+    private var _titleBar: Widget?
+    public var titlebar: Widget? {
+        get { return _titleBar }
+        set { gtk_window_set_titlebar(castedPointer(), newValue?.widgetPointer) }
+    }
 }
