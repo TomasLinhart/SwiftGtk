@@ -11,7 +11,7 @@ import PackageDescription
 let package = Package(
   name:  "SwiftGtk",
   dependencies: [
-    .Package(url: gtkUrl, majorVersion: 1, minor: 2)
+    .Package(url: gtkUrl, majorVersion: 1, minor: 3)
   ],
   exclude: ["Sources/Ancillary Files"]
 )
