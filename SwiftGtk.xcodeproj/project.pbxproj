@@ -48,6 +48,7 @@
 		C3AEBB9C1E3E144B009284CC /* BaselinePosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AEBB9B1E3E144B009284CC /* BaselinePosition.swift */; };
 		C3AEBB9E1E3E1A58009284CC /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AEBB9D1E3E1A58009284CC /* ToggleButton.swift */; };
 		C3AEBBA21E3E1EF0009284CC /* Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AEBBA11E3E1EF0009284CC /* Orientation.swift */; };
+		C3F7E1C21F4B5BEF007EFCD4 /* HeaderBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F7E1C11F4B5BEF007EFCD4 /* HeaderBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +129,7 @@
 		C3AEBB9B1E3E144B009284CC /* BaselinePosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaselinePosition.swift; sourceTree = "<group>"; };
 		C3AEBB9D1E3E1A58009284CC /* ToggleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
 		C3AEBBA11E3E1EF0009284CC /* Orientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Orientation.swift; sourceTree = "<group>"; };
+		C3F7E1C11F4B5BEF007EFCD4 /* HeaderBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,15 +258,16 @@
 				78E1641F1B405CF6008A7CEC /* Box.swift */,
 				78E164201B405CF6008A7CEC /* Button.swift */,
 				78E164211B405CF6008A7CEC /* ButtonBox.swift */,
+				78FDFF051C3C7B8200A0859B /* Calendar.swift */,
 				78E164221B405CF6008A7CEC /* Container.swift */,
-				78E164261B405CF6008A7CEC /* Widget.swift */,
-				78E164271B405CF6008A7CEC /* Window.swift */,
+				C3AEBB961E3E103A009284CC /* Grid.swift */,
+				C3F7E1C11F4B5BEF007EFCD4 /* HeaderBar.swift */,
+				78FDFF0E1C3C87AF00A0859B /* Image.swift */,
 				78E1644A1B409078008A7CEC /* Label.swift */,
 				78FDFEFD1C3C3D0100A0859B /* TextView.swift */,
-				78FDFF051C3C7B8200A0859B /* Calendar.swift */,
-				78FDFF0E1C3C87AF00A0859B /* Image.swift */,
-				C3AEBB961E3E103A009284CC /* Grid.swift */,
 				C3AEBB9D1E3E1A58009284CC /* ToggleButton.swift */,
+				78E164261B405CF6008A7CEC /* Widget.swift */,
+				78E164271B405CF6008A7CEC /* Window.swift */,
 			);
 			name = Widgets;
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 				C3AEBB971E3E103A009284CC /* Grid.swift in Sources */,
 				78FDFF081C3C80D400A0859B /* Value.swift in Sources */,
 				78FDFEFE1C3C3D0100A0859B /* TextView.swift in Sources */,
+				C3F7E1C21F4B5BEF007EFCD4 /* HeaderBar.swift in Sources */,
 				78E164311B405CF6008A7CEC /* Signals.swift in Sources */,
 				78E164291B405CF6008A7CEC /* ApplicationWindow.swift in Sources */,
 				78FDFF001C3C3EEF00A0859B /* Common.swift in Sources */,
