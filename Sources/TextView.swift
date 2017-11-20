@@ -47,6 +47,36 @@ public class TextView: Container {
         }
     }
 
+    public var wrapMode: GtkWrapMode {
+      get {
+        return gtk_text_view_get_wrap_mode(castedPointer())
+      }
+      set {
+        gtk_text_view_set_wrap_mode(castedPointer(), newValue)
+      }
+    }
+
+    public var text: String {
+      get {
+        var string = ""
+        var start = GtkTextIter()
+        var end = GtkTextIter()
+        let buffer = gtk_text_view_get_buffer(castedPointer())
+
+        gtk_text_buffer_get_start_iter(buffer, &start)
+        gtk_text_buffer_get_end_iter(buffer, &end)
+
+        let text = gtk_text_buffer_get_text(buffer, &start, &end, gboolean(0))
+        let loop = stride(from: 0, to: gtk_text_iter_get_offset(&end), by: 1)
+        for i in loop {
+          string += String(UnicodeScalar(UInt8(text![Int(i)])))
+        }
+        return string
+      }
+      set {
+        gtk_text_buffer_set_text(gtk_text_view_get_buffer(castedPointer()), newValue, gint(newValue.count))
+      }
+    }
     // MARK: - Signals
 
     public var backspace: ((TextView) -> Void)?
