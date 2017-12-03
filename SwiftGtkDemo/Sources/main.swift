@@ -64,7 +64,21 @@ app.run { window in
     }
 
     buttonBox.add(imageButton)
+    
+    let fullScreenButton = Button(label: "Enter Full Screen")
+    fullScreenButton.clicked = { _ in
+        window.enterFullScreen()
+    }
+    
+    buttonBox.add(fullScreenButton)
 
+    let exitFullScreenButton = Button(label: "Exit Full Screen")
+    exitFullScreenButton.clicked = { _ in
+        window.exitFullScreen()
+    }
+    
+    buttonBox.add(exitFullScreenButton)
+    
     let textView = TextView()
     textView.backspace = { _ in
         print("backspace")
