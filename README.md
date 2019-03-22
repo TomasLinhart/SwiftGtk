@@ -1,12 +1,12 @@
 # SwiftGtk
 
-SwiftGtk is an experimental Gtk+ binding for Swift 4.2 that allow to use Gtk+ in more "Swifty" way. Currently it implements a small subset of Gtk+ and it works on Mac OS X and Ubuntu Linux.
+SwiftGtk is an experimental Gtk+ binding for Swift 4.2 that allow to use Gtk+ in more "Swifty" way. Currently it implements a small subset of Gtk+ and it works on MacOS and Ubuntu Linux.
 
 ## Dependencies
 
 You need to have Swift 4.2 or higher installed on your computer (tested with 4.2.3 bundled with CLion) and depending on your platform you need to install Gtk+3.
 
-### Mac OS X
+### MacOS
 
 You need to have Gtk+3 installed on your machine. Recommended way for installing Gtk+3 is through [homebrew](http://brew.sh/).
 
