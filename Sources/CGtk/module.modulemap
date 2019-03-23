@@ -1,9 +1,11 @@
+
 module CGtk [system] {
-  umbrella header "/usr/include/gtk-3.0/gtk/gtk.h"
 
+ header "header.h"
+  header "/usr/include/gtk-3.0/gtk/gtk.h"
 
-  link "gtk-3.0"
-  link "gdk-3.0"
+  link "gtk-3"
+  link "gdk-3"
   link "pangocairo-1.0"
   link "pango-1.0"
   link "atk-1.0"
@@ -15,4 +17,4 @@ module CGtk [system] {
   link "glib-2.0"
 
   export *
-}
+  }
