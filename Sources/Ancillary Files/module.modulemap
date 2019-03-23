@@ -1,5 +1,0 @@
-// This would be best to declare in module.private.modulemap but it works only in for Swift 2.1.1 but not for Swift 2.2.
-
-module CGtk {
-    header "/usr/local/include/gtk-3.0/gtk/gtk.h"
-}
