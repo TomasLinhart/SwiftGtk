@@ -1,8 +1,1 @@
-import PackageDescription
-
-let package = Package(
-  name:  "SwiftGtkDemo",
-  dependencies: [
-    .Package(url: "../", majorVersion: 0, minor: 3)
-  ]
-)
+// swift-tools-version:4.2

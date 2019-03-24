@@ -2,7 +2,7 @@
 //  Copyright © 2015 Tomas Linhart. All rights reserved.
 //
 
-import SwiftGtk
+import Gtk
 
 let app = Application(applicationId: "com.tomaslinhart.swiftgtk.example")
 app.run { window in

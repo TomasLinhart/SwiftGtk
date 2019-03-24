@@ -10,6 +10,7 @@ let package = Package(
                     targets: ["Gtk"]
             )
 
+
         ], //is necessary here?
         targets: [
             .systemLibrary(
@@ -22,8 +23,7 @@ let package = Package(
                     name: "Gtk",
                     dependencies: ["CGtk"],
                     path: "Sources/sGtk"
-            )
-
+            ),
         ]
 
 )
