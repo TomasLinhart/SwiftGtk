@@ -4,7 +4,7 @@
 
 import CGtk
 
-public class Window: Bin {
+open class Window: Bin {
     public enum WindowType {
         case topLevel
         case popUp
@@ -69,7 +69,10 @@ public class Window: Bin {
         get { return _titleBar }
         set { gtk_window_set_titlebar(castedPointer(), newValue?.widgetPointer) }
     }
-    public func makeFullscreen() {
+    public func enterFullScreen() {
         gtk_window_fullscreen(castedPointer())
+    }
+    public func exitFullScreen() {
+        gtk_window_unfullscreen(castedPointer())
     }
 }
