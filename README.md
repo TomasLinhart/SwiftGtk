@@ -1,10 +1,10 @@
 # SwiftGtk
 
-SwiftGtk is an experimental Gtk+ binding for Swift 4.2 that allow to use Gtk+ in more "Swifty" way. Currently it implements a small subset of Gtk+ and it works on MacOS and Ubuntu Linux.
+SwiftGtk is an experimental Gtk+ binding for Swift 5.0 that allow to use Gtk+ in more "Swifty" way. Currently it implements a small subset of Gtk+ and it works on MacOS and Ubuntu Linux.
 
 ## Dependencies
 
-You need to have Swift 4.2 or higher installed on your computer (tested with 4.2.3 bundled with CLion) and depending on your platform you need to install Gtk+3.
+You need to have Swift 5.0 or higher installed on your computer (tested with 5.0 on CLion IDE) and depending on your platform you need to install Gtk+3.
 
 ### MacOS
 
@@ -19,7 +19,7 @@ brew install gtk+3
 You need to have Gtk+3 and Clang installed on your machine. You can easily install them with `apt`.
 
 ```bash
-sudo apt install libgtk-3-dev clang
+sudo apt install gtk-3.0-dev clang
 ```
 
 ## Usage
@@ -37,14 +37,14 @@ let package = Package(
 )
 ```
 
-After that run `swift build` in the folder where `Package.swift` is located. Once it builds you can execute the application `.build/debug/SwiftGtkApplication`.
+After that run `swift build` in the folder where `Package.swift` is located. Once it builds you can execute the application `swift run`.
 
 ## Demo
 
 Following code will create a window with a button that when it is pressed presents another window.
 
 ```swift
-import SwiftGtk
+import sGtk
 
 let app = Application(applicationId: "com.example.application")
 app.run { window in
