@@ -31,38 +31,21 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Package@swift-4.2.swift">
+        <entry file="file://$PROJECT_DIR$/Sources/SwiftGtkDemo/main.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="405">
+              <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.CLion2019.1/system/ModuleCache/default/4.2.3/x86_64/linux/PackageDescription/PackageDescription.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-324" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Sources/SwiftGtkDemo/main.swift">
+        <entry file="file://$PROJECT_DIR$/Package.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+            <state relative-caret-position="255">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Package.resolved">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Package.swift">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -73,8 +56,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Package@swift-4.2.swift" />
         <option value="$PROJECT_DIR$/Sources/SwiftGtkDemo/main.swift" />
+        <option value="$PROJECT_DIR$/Package@swift-4.2.swift" />
+        <option value="$PROJECT_DIR$/Package.swift" />
       </list>
     </option>
   </component>
@@ -89,10 +73,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="147" />
-    <option name="y" value="172" />
-    <option name="width" value="2370" />
-    <option name="height" value="1406" />
+    <option name="x" value="30" />
+    <option name="y" value="26" />
+    <option name="width" value="2510" />
+    <option name="height" value="1417" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -107,22 +91,6 @@
               <item name="SwiftGtkDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="SwiftGtkDemo" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="SwiftGtkDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SwiftGtkDemo" type="462c0819:PsiDirectoryNode" />
-              <item name=".build" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SwiftGtkDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SwiftGtkDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="Sources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SwiftGtkDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SwiftGtkDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="Sources" type="462c0819:PsiDirectoryNode" />
-              <item name="SwiftGtkDemo" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -134,10 +102,10 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="SwiftSettings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -152,12 +120,12 @@
     </option>
   </component>
   <component name="RunManager" selected="Swift Package Run.SwiftGtkDemo">
-    <configuration name="SwiftGtkDemo" type="SwiftPackageManagerRunConfiguration" factoryName="Swift Package Run" PASS_PARENT_ENVS_2="true" PROJECT_NAME="SwiftGtkDemo" TARGET_NAME="SwiftGtkDemo" CONFIG_NAME="SwiftGtkDemo" RUN_TARGET_PROJECT_NAME="SwiftGtkDemo" RUN_TARGET_NAME="SwiftGtkDemo">
+    <configuration name="SwiftGtkDemo" type="SwiftPackageManagerRunConfiguration" factoryName="Swift Package Run" PASS_PARENT_ENVS_2="true" PROJECT_NAME="SwiftGtkDemo" TARGET_NAME="SwiftGtkDemo" CONFIG_NAME="SwiftGtkDemo">
       <method v="2">
         <option name="SPM.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SwiftGtkDemoTest" type="SwiftPackageManagerTestRunConfiguration" factoryName="Swift Package Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="SwiftGtkDemo" TARGET_NAME="SwiftGtkDemoTest" CONFIG_NAME="SwiftGtkDemoTest" RUN_TARGET_PROJECT_NAME="SwiftGtkDemo" RUN_TARGET_NAME="SwiftGtkDemoTest">
+    <configuration name="SwiftGtkDemoTest" type="SwiftPackageManagerTestRunConfiguration" factoryName="Swift Package Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="SwiftGtkDemo" TARGET_NAME="SwiftGtkDemoTest" CONFIG_NAME="SwiftGtkDemoTest">
       <method v="2">
         <option name="SPM.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
@@ -176,11 +144,14 @@
       <workItem from="1553386035679" duration="479000" />
       <workItem from="1553386538779" duration="757000" />
       <workItem from="1553389059175" duration="1340000" />
+      <workItem from="1553662122446" duration="86000" />
+      <workItem from="1553662282199" duration="242000" />
+      <workItem from="1553662556456" duration="683000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2576000" />
+    <option name="totallyTimeSpent" value="3587000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -192,10 +163,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="32" width="2493" height="1408" extended-state="6" />
+    <frame x="50" y="23" width="2510" height="1417" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49822065" visible="true" weight="0.25523186" />
-      <window_info id="Structure" order="1" sideWeight="0.5017794" side_tool="true" visible="true" weight="0.25523186" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49493814" visible="true" weight="0.2613452" />
+      <window_info id="Structure" order="1" sideWeight="0.50506186" side_tool="true" visible="true" weight="0.2613452" />
       <window_info id="Favorites" order="2" sideWeight="0.5017794" side_tool="true" weight="0.25523186" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49979484" weight="0.3298887" />
@@ -206,8 +177,8 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32962668" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32962668" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49979484" weight="0.3290938" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50020516" side_tool="true" visible="true" weight="0.3298887" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49918962" visible="true" weight="0.3290566" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5008104" side_tool="true" visible="true" weight="0.3290566" />
       <window_info anchor="bottom" id="Build" order="11" sideWeight="0.4993845" weight="0.3298887" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -225,28 +196,22 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Package.resolved">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Package.swift">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/.CLion2019.1/system/ModuleCache/default/4.2.3/x86_64/linux/PackageDescription/PackageDescription.swift">
+    <entry file="file://$PROJECT_DIR$/Package.resolved" />
+    <entry file="file://$PROJECT_DIR$/../.CLion2019.1/system/ModuleCache/default/4.2.3/x86_64/linux/PackageDescription/PackageDescription.swift" />
+    <entry file="file://$PROJECT_DIR$/Sources/SwiftGtkDemo/main.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-324" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Package@swift-4.2.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="405">
+          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/SwiftGtkDemo/main.swift">
+    <entry file="file://$PROJECT_DIR$/Package@swift-4.2.swift">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Package.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        <state relative-caret-position="255">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
