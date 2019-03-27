@@ -69,4 +69,7 @@ public class Window: Bin {
         get { return _titleBar }
         set { gtk_window_set_titlebar(castedPointer(), newValue?.widgetPointer) }
     }
+    public func makeFullscreen() {
+        gtk_window_fullscreen(castedPointer())
+    }
 }

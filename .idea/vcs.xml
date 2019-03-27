@@ -2,6 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/SwiftGtkDemo/.build/checkouts/SwiftGtk.git-4075604276264049666" vcs="Git" />
   </component>
 </project>
