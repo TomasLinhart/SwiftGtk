@@ -1,12 +1,12 @@
 # SwiftGtk
 
-SwiftGtk is a experimental Gtk+ binding for Swift that tries to make usage of Gtk+ pleasant and "Swifty" as much as possible. Currently it implements only a small subset of Gtk+ and it works on Mac OS X and Linux.
+SwiftGtk is an experimental Gtk+ binding for Swift 5.0 that allow to use Gtk+ in more "Swifty" way. Currently it implements a small subset of Gtk+ and it works on MacOS and Ubuntu Linux.
 
 ## Dependencies
 
-You need to have Swift 3.1 or higher installed on your computer (tested with 3.1.1 bundled with Xcode 8.3.3) and depending on your platform you need to install Gtk+3. On Mac OS X you can also build the project with Xcode.
+You need to have Swift 5.0 or higher installed on your computer (tested with 5.0 on CLion IDE) and depending on your platform you need to install Gtk+3.
 
-### Mac OS X
+### MacOS
 
 You need to have Gtk+3 installed on your machine. Recommended way for installing Gtk+3 is through [homebrew](http://brew.sh/).
 
@@ -14,12 +14,12 @@ You need to have Gtk+3 installed on your machine. Recommended way for installing
 brew install gtk+3
 ```
 
-### Linux
+### Ubuntu 18:04
 
-You need to have Gtk+3 and Clang installed on your machine. You can easily install them with `apt-get`.
+You need to have Gtk+3 and Clang installed on your machine. You can easily install them with `apt`.
 
 ```bash
-sudo apt-get install libgtk-3-dev clang
+sudo apt install gtk-3.0-dev clang
 ```
 
 ## Usage
@@ -32,19 +32,19 @@ import PackageDescription
 let package = Package(
     name: "SwiftGtkApplication",
     dependencies: [
-        .Package(url: "https://github.com/TomasLinhart/SwiftGtk", Version(0, 3, 1))
+        .package(url: "https://github.com/GothStar/SwiftGtk", .branch: "master")
     ]
 )
 ```
 
-After that run `swift build` in the folder where `Package.swift` is located. Once it builds you can execute the application `.build/debug/SwiftGtkApplication`.
+After that run `swift build` in the folder where `Package.swift` is located. Once it builds you can execute the application `swift run`.
 
 ## Demo
 
 Following code will create a window with a button that when it is pressed presents another window.
 
 ```swift
-import SwiftGtk
+import sGtk
 
 let app = Application(applicationId: "com.example.application")
 app.run { window in
