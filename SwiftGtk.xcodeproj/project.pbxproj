@@ -14,7 +14,7 @@
 		78E1640D1B405C3E008A7CEC /* libgdk-3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E164011B405C3E008A7CEC /* libgdk-3.0.dylib */; };
 		78E1640E1B405C3E008A7CEC /* libgtk-3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E164021B405C3E008A7CEC /* libgtk-3.0.dylib */; };
 		78E1640F1B405C3E008A7CEC /* libpango-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E164031B405C3E008A7CEC /* libpango-1.0.0.dylib */; };
-		78E164101B405C3E008A7CEC /* libpixman-1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E164041B405C3E008A7CEC /* libpixman-1.0.dylib */; };
+		78E164101B405C3E008A7CEC /* libpixman-1.0.40.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E164041B405C3E008A7CEC /* libpixman-1.0.40.0.dylib */; };
 		78E164111B405C3E008A7CEC /* libatk-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E164051B405C3E008A7CEC /* libatk-1.0.0.dylib */; };
 		78E164121B405C3E008A7CEC /* libgdk_pixbuf-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E164061B405C3E008A7CEC /* libgdk_pixbuf-2.0.0.dylib */; };
 		78E164131B405C3E008A7CEC /* libgio-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E164071B405C3E008A7CEC /* libgio-2.0.0.dylib */; };
@@ -88,18 +88,18 @@
 		78E163EC1B405B3A008A7CEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78E163F91B405BB3008A7CEC /* SwiftGtkDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftGtkDemo; sourceTree = BUILT_PRODUCTS_DIR; };
 		78E163FB1B405BB3008A7CEC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		78E164001B405C3E008A7CEC /* libgailutil-3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgailutil-3.0.dylib"; path = "/usr/local/Cellar/gtk+3/3.18.6/lib/libgailutil-3.0.dylib"; sourceTree = "<absolute>"; };
-		78E164011B405C3E008A7CEC /* libgdk-3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgdk-3.0.dylib"; path = "/usr/local/Cellar/gtk+3/3.18.6/lib/libgdk-3.0.dylib"; sourceTree = "<absolute>"; };
-		78E164021B405C3E008A7CEC /* libgtk-3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgtk-3.0.dylib"; path = "/usr/local/Cellar/gtk+3/3.18.6/lib/libgtk-3.0.dylib"; sourceTree = "<absolute>"; };
-		78E164031B405C3E008A7CEC /* libpango-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libpango-1.0.0.dylib"; path = "/usr/local/Cellar/pango/1.36.8/lib/libpango-1.0.0.dylib"; sourceTree = "<absolute>"; };
-		78E164041B405C3E008A7CEC /* libpixman-1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libpixman-1.0.dylib"; path = "/usr/local/Cellar/pixman/0.32.6/lib/libpixman-1.0.dylib"; sourceTree = "<absolute>"; };
-		78E164051B405C3E008A7CEC /* libatk-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libatk-1.0.0.dylib"; path = "/usr/local/Cellar/atk/2.16.0/lib/libatk-1.0.0.dylib"; sourceTree = "<absolute>"; };
-		78E164061B405C3E008A7CEC /* libgdk_pixbuf-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgdk_pixbuf-2.0.0.dylib"; path = "/usr/local/Cellar/gdk-pixbuf/2.30.8/lib/libgdk_pixbuf-2.0.0.dylib"; sourceTree = "<absolute>"; };
-		78E164071B405C3E008A7CEC /* libgio-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgio-2.0.0.dylib"; path = "/usr/local/Cellar/glib/2.44.0/lib/libgio-2.0.0.dylib"; sourceTree = "<absolute>"; };
-		78E164081B405C3E008A7CEC /* libglib-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libglib-2.0.0.dylib"; path = "/usr/local/Cellar/glib/2.44.0/lib/libglib-2.0.0.dylib"; sourceTree = "<absolute>"; };
-		78E164091B405C3E008A7CEC /* libgmodule-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgmodule-2.0.0.dylib"; path = "/usr/local/Cellar/glib/2.44.0/lib/libgmodule-2.0.0.dylib"; sourceTree = "<absolute>"; };
-		78E1640A1B405C3E008A7CEC /* libgobject-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgobject-2.0.0.dylib"; path = "/usr/local/Cellar/glib/2.44.0/lib/libgobject-2.0.0.dylib"; sourceTree = "<absolute>"; };
-		78E1640B1B405C3E008A7CEC /* libgthread-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgthread-2.0.0.dylib"; path = "/usr/local/Cellar/glib/2.44.0/lib/libgthread-2.0.0.dylib"; sourceTree = "<absolute>"; };
+		78E164001B405C3E008A7CEC /* libgailutil-3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgailutil-3.0.dylib"; path = "/usr/local/Cellar/gtk+3/3.24.23/lib/libgailutil-3.0.dylib"; sourceTree = "<absolute>"; };
+		78E164011B405C3E008A7CEC /* libgdk-3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgdk-3.0.dylib"; path = "/usr/local/Cellar/gtk+3/3.24.23/lib/libgdk-3.0.dylib"; sourceTree = "<absolute>"; };
+		78E164021B405C3E008A7CEC /* libgtk-3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgtk-3.0.dylib"; path = "/usr/local/Cellar/gtk+3/3.24.23/lib/libgtk-3.0.dylib"; sourceTree = "<absolute>"; };
+		78E164031B405C3E008A7CEC /* libpango-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libpango-1.0.0.dylib"; path = "/usr/local/Cellar/pango/1.46.2/lib/libpango-1.0.0.dylib"; sourceTree = "<absolute>"; };
+		78E164041B405C3E008A7CEC /* libpixman-1.0.40.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libpixman-1.0.40.0.dylib"; path = "/usr/local/Cellar/pixman/0.40.0/lib/libpixman-1.0.40.0.dylib"; sourceTree = "<absolute>"; };
+		78E164051B405C3E008A7CEC /* libatk-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libatk-1.0.0.dylib"; path = "/usr/local/Cellar/atk/2.36.0/lib/libatk-1.0.0.dylib"; sourceTree = "<absolute>"; };
+		78E164061B405C3E008A7CEC /* libgdk_pixbuf-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgdk_pixbuf-2.0.0.dylib"; path = "/usr/local/Cellar/gdk-pixbuf/2.40.0_1/lib/libgdk_pixbuf-2.0.0.dylib"; sourceTree = "<absolute>"; };
+		78E164071B405C3E008A7CEC /* libgio-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgio-2.0.0.dylib"; path = "/usr/local/Cellar/glib/2.66.0/lib/libgio-2.0.0.dylib"; sourceTree = "<absolute>"; };
+		78E164081B405C3E008A7CEC /* libglib-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libglib-2.0.0.dylib"; path = "/usr/local/Cellar/glib/2.66.0/lib/libglib-2.0.0.dylib"; sourceTree = "<absolute>"; };
+		78E164091B405C3E008A7CEC /* libgmodule-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgmodule-2.0.0.dylib"; path = "/usr/local/Cellar/glib/2.66.0/lib/libgmodule-2.0.0.dylib"; sourceTree = "<absolute>"; };
+		78E1640A1B405C3E008A7CEC /* libgobject-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgobject-2.0.0.dylib"; path = "/usr/local/Cellar/glib/2.66.0/lib/libgobject-2.0.0.dylib"; sourceTree = "<absolute>"; };
+		78E1640B1B405C3E008A7CEC /* libgthread-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgthread-2.0.0.dylib"; path = "/usr/local/Cellar/glib/2.66.0/lib/libgthread-2.0.0.dylib"; sourceTree = "<absolute>"; };
 		78E1641C1B405CF6008A7CEC /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		78E1641D1B405CF6008A7CEC /* ApplicationWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationWindow.swift; sourceTree = "<group>"; };
 		78E1641E1B405CF6008A7CEC /* Bin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bin.swift; sourceTree = "<group>"; };
@@ -138,7 +138,7 @@
 				78E1640D1B405C3E008A7CEC /* libgdk-3.0.dylib in Frameworks */,
 				78E1640E1B405C3E008A7CEC /* libgtk-3.0.dylib in Frameworks */,
 				78E1640F1B405C3E008A7CEC /* libpango-1.0.0.dylib in Frameworks */,
-				78E164101B405C3E008A7CEC /* libpixman-1.0.dylib in Frameworks */,
+				78E164101B405C3E008A7CEC /* libpixman-1.0.40.0.dylib in Frameworks */,
 				78E164111B405C3E008A7CEC /* libatk-1.0.0.dylib in Frameworks */,
 				78E164121B405C3E008A7CEC /* libgdk_pixbuf-2.0.0.dylib in Frameworks */,
 				78E164131B405C3E008A7CEC /* libgio-2.0.0.dylib in Frameworks */,
@@ -232,7 +232,7 @@
 				78E164011B405C3E008A7CEC /* libgdk-3.0.dylib */,
 				78E164021B405C3E008A7CEC /* libgtk-3.0.dylib */,
 				78E164031B405C3E008A7CEC /* libpango-1.0.0.dylib */,
-				78E164041B405C3E008A7CEC /* libpixman-1.0.dylib */,
+				78E164041B405C3E008A7CEC /* libpixman-1.0.40.0.dylib */,
 				78E164051B405C3E008A7CEC /* libatk-1.0.0.dylib */,
 				78E164061B405C3E008A7CEC /* libgdk_pixbuf-2.0.0.dylib */,
 				78E164071B405C3E008A7CEC /* libgio-2.0.0.dylib */,
@@ -384,7 +384,7 @@
 				TargetAttributes = {
 					78E163DA1B405B3A008A7CEC = {
 						CreatedOnToolsVersion = 7.0;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1200;
 					};
 					78E163E41B405B3A008A7CEC = {
 						CreatedOnToolsVersion = 7.0;
@@ -392,6 +392,7 @@
 					};
 					78E163F81B405BB3008A7CEC = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 1200;
 					};
 				};
 			};
@@ -657,6 +658,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -693,6 +695,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -723,6 +726,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -731,6 +735,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
