@@ -14,7 +14,7 @@
 		78E1640D1B405C3E008A7CEC /* libgdk-3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E164011B405C3E008A7CEC /* libgdk-3.0.dylib */; };
 		78E1640E1B405C3E008A7CEC /* libgtk-3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E164021B405C3E008A7CEC /* libgtk-3.0.dylib */; };
 		78E1640F1B405C3E008A7CEC /* libpango-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E164031B405C3E008A7CEC /* libpango-1.0.0.dylib */; };
-		78E164101B405C3E008A7CEC /* libpixman-1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E164041B405C3E008A7CEC /* libpixman-1.0.dylib */; };
+		78E164101B405C3E008A7CEC /* libpixman-1.0.40.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E164041B405C3E008A7CEC /* libpixman-1.0.40.0.dylib */; };
 		78E164111B405C3E008A7CEC /* libatk-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E164051B405C3E008A7CEC /* libatk-1.0.0.dylib */; };
 		78E164121B405C3E008A7CEC /* libgdk_pixbuf-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E164061B405C3E008A7CEC /* libgdk_pixbuf-2.0.0.dylib */; };
 		78E164131B405C3E008A7CEC /* libgio-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E164071B405C3E008A7CEC /* libgio-2.0.0.dylib */; };
@@ -83,24 +83,25 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4D35C0792522932B00AC07E9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		784588981C3B1D2D00FB615A /* Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
 		78E163DB1B405B3A008A7CEC /* SwiftGtk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftGtk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78E163E51B405B3A008A7CEC /* SwiftGtkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftGtkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78E163EC1B405B3A008A7CEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78E163F91B405BB3008A7CEC /* SwiftGtkDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftGtkDemo; sourceTree = BUILT_PRODUCTS_DIR; };
 		78E163FB1B405BB3008A7CEC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		78E164001B405C3E008A7CEC /* libgailutil-3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgailutil-3.0.dylib"; path = "/usr/local/Cellar/gtk+3/3.18.6/lib/libgailutil-3.0.dylib"; sourceTree = "<absolute>"; };
-		78E164011B405C3E008A7CEC /* libgdk-3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgdk-3.0.dylib"; path = "/usr/local/Cellar/gtk+3/3.18.6/lib/libgdk-3.0.dylib"; sourceTree = "<absolute>"; };
-		78E164021B405C3E008A7CEC /* libgtk-3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgtk-3.0.dylib"; path = "/usr/local/Cellar/gtk+3/3.18.6/lib/libgtk-3.0.dylib"; sourceTree = "<absolute>"; };
-		78E164031B405C3E008A7CEC /* libpango-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libpango-1.0.0.dylib"; path = "/usr/local/Cellar/pango/1.36.8/lib/libpango-1.0.0.dylib"; sourceTree = "<absolute>"; };
-		78E164041B405C3E008A7CEC /* libpixman-1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libpixman-1.0.dylib"; path = "/usr/local/Cellar/pixman/0.32.6/lib/libpixman-1.0.dylib"; sourceTree = "<absolute>"; };
-		78E164051B405C3E008A7CEC /* libatk-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libatk-1.0.0.dylib"; path = "/usr/local/Cellar/atk/2.16.0/lib/libatk-1.0.0.dylib"; sourceTree = "<absolute>"; };
-		78E164061B405C3E008A7CEC /* libgdk_pixbuf-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgdk_pixbuf-2.0.0.dylib"; path = "/usr/local/Cellar/gdk-pixbuf/2.30.8/lib/libgdk_pixbuf-2.0.0.dylib"; sourceTree = "<absolute>"; };
-		78E164071B405C3E008A7CEC /* libgio-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgio-2.0.0.dylib"; path = "/usr/local/Cellar/glib/2.44.0/lib/libgio-2.0.0.dylib"; sourceTree = "<absolute>"; };
-		78E164081B405C3E008A7CEC /* libglib-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libglib-2.0.0.dylib"; path = "/usr/local/Cellar/glib/2.44.0/lib/libglib-2.0.0.dylib"; sourceTree = "<absolute>"; };
-		78E164091B405C3E008A7CEC /* libgmodule-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgmodule-2.0.0.dylib"; path = "/usr/local/Cellar/glib/2.44.0/lib/libgmodule-2.0.0.dylib"; sourceTree = "<absolute>"; };
-		78E1640A1B405C3E008A7CEC /* libgobject-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgobject-2.0.0.dylib"; path = "/usr/local/Cellar/glib/2.44.0/lib/libgobject-2.0.0.dylib"; sourceTree = "<absolute>"; };
-		78E1640B1B405C3E008A7CEC /* libgthread-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgthread-2.0.0.dylib"; path = "/usr/local/Cellar/glib/2.44.0/lib/libgthread-2.0.0.dylib"; sourceTree = "<absolute>"; };
+		78E164001B405C3E008A7CEC /* libgailutil-3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgailutil-3.0.dylib"; path = "/usr/local/Cellar/gtk+3/3.24.23/lib/libgailutil-3.0.dylib"; sourceTree = "<absolute>"; };
+		78E164011B405C3E008A7CEC /* libgdk-3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgdk-3.0.dylib"; path = "/usr/local/Cellar/gtk+3/3.24.23/lib/libgdk-3.0.dylib"; sourceTree = "<absolute>"; };
+		78E164021B405C3E008A7CEC /* libgtk-3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgtk-3.0.dylib"; path = "/usr/local/Cellar/gtk+3/3.24.23/lib/libgtk-3.0.dylib"; sourceTree = "<absolute>"; };
+		78E164031B405C3E008A7CEC /* libpango-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libpango-1.0.0.dylib"; path = "/usr/local/Cellar/pango/1.46.2/lib/libpango-1.0.0.dylib"; sourceTree = "<absolute>"; };
+		78E164041B405C3E008A7CEC /* libpixman-1.0.40.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libpixman-1.0.40.0.dylib"; path = "/usr/local/Cellar/pixman/0.40.0/lib/libpixman-1.0.40.0.dylib"; sourceTree = "<absolute>"; };
+		78E164051B405C3E008A7CEC /* libatk-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libatk-1.0.0.dylib"; path = "/usr/local/Cellar/atk/2.36.0/lib/libatk-1.0.0.dylib"; sourceTree = "<absolute>"; };
+		78E164061B405C3E008A7CEC /* libgdk_pixbuf-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgdk_pixbuf-2.0.0.dylib"; path = "/usr/local/Cellar/gdk-pixbuf/2.40.0_1/lib/libgdk_pixbuf-2.0.0.dylib"; sourceTree = "<absolute>"; };
+		78E164071B405C3E008A7CEC /* libgio-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgio-2.0.0.dylib"; path = "/usr/local/Cellar/glib/2.66.0/lib/libgio-2.0.0.dylib"; sourceTree = "<absolute>"; };
+		78E164081B405C3E008A7CEC /* libglib-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libglib-2.0.0.dylib"; path = "/usr/local/Cellar/glib/2.66.0/lib/libglib-2.0.0.dylib"; sourceTree = "<absolute>"; };
+		78E164091B405C3E008A7CEC /* libgmodule-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgmodule-2.0.0.dylib"; path = "/usr/local/Cellar/glib/2.66.0/lib/libgmodule-2.0.0.dylib"; sourceTree = "<absolute>"; };
+		78E1640A1B405C3E008A7CEC /* libgobject-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgobject-2.0.0.dylib"; path = "/usr/local/Cellar/glib/2.66.0/lib/libgobject-2.0.0.dylib"; sourceTree = "<absolute>"; };
+		78E1640B1B405C3E008A7CEC /* libgthread-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgthread-2.0.0.dylib"; path = "/usr/local/Cellar/glib/2.66.0/lib/libgthread-2.0.0.dylib"; sourceTree = "<absolute>"; };
 		78E1641C1B405CF6008A7CEC /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		78E1641D1B405CF6008A7CEC /* ApplicationWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationWindow.swift; sourceTree = "<group>"; };
 		78E1641E1B405CF6008A7CEC /* Bin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bin.swift; sourceTree = "<group>"; };
@@ -141,7 +142,7 @@
 				78E1640D1B405C3E008A7CEC /* libgdk-3.0.dylib in Frameworks */,
 				78E1640E1B405C3E008A7CEC /* libgtk-3.0.dylib in Frameworks */,
 				78E1640F1B405C3E008A7CEC /* libpango-1.0.0.dylib in Frameworks */,
-				78E164101B405C3E008A7CEC /* libpixman-1.0.dylib in Frameworks */,
+				78E164101B405C3E008A7CEC /* libpixman-1.0.40.0.dylib in Frameworks */,
 				78E164111B405C3E008A7CEC /* libatk-1.0.0.dylib in Frameworks */,
 				78E164121B405C3E008A7CEC /* libgdk_pixbuf-2.0.0.dylib in Frameworks */,
 				78E164131B405C3E008A7CEC /* libgio-2.0.0.dylib in Frameworks */,
@@ -174,6 +175,7 @@
 		78E163D11B405B3A008A7CEC = {
 			isa = PBXGroup;
 			children = (
+				4D35C0792522932B00AC07E9 /* README.md */,
 				78E163DD1B405B3A008A7CEC /* SwiftGtk */,
 				78E163E91B405B3A008A7CEC /* SwiftGtkTests */,
 				78E163FA1B405BB3008A7CEC /* SwiftGtkDemo */,
@@ -235,7 +237,7 @@
 				78E164011B405C3E008A7CEC /* libgdk-3.0.dylib */,
 				78E164021B405C3E008A7CEC /* libgtk-3.0.dylib */,
 				78E164031B405C3E008A7CEC /* libpango-1.0.0.dylib */,
-				78E164041B405C3E008A7CEC /* libpixman-1.0.dylib */,
+				78E164041B405C3E008A7CEC /* libpixman-1.0.40.0.dylib */,
 				78E164051B405C3E008A7CEC /* libatk-1.0.0.dylib */,
 				78E164061B405C3E008A7CEC /* libgdk_pixbuf-2.0.0.dylib */,
 				78E164071B405C3E008A7CEC /* libgio-2.0.0.dylib */,
@@ -391,19 +393,20 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Tomas Linhart";
 				TargetAttributes = {
 					78E163DA1B405B3A008A7CEC = {
 						CreatedOnToolsVersion = 7.0;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 1200;
 					};
 					78E163E41B405B3A008A7CEC = {
 						CreatedOnToolsVersion = 7.0;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 0900;
 					};
 					78E163F81B405BB3008A7CEC = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 1200;
 					};
 				};
 			};
@@ -412,6 +415,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 78E163D11B405B3A008A7CEC;
@@ -529,18 +533,28 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -568,6 +582,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -577,18 +592,28 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -609,6 +634,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -634,6 +660,7 @@
 					"/usr/local/include/gdk-pixbuf-2.0",
 					"/usr/local/include/atk-1.0",
 					"/usr/local/lib/glib-2.0/include",
+					/usr/local/include/harfbuzz/,
 				);
 				INFOPLIST_FILE = "Sources/Ancillary Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -647,7 +674,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -671,6 +698,7 @@
 					"/usr/local/include/gdk-pixbuf-2.0",
 					"/usr/local/include/atk-1.0",
 					"/usr/local/lib/glib-2.0/include",
+					/usr/local/include/harfbuzz/,
 				);
 				INFOPLIST_FILE = "Sources/Ancillary Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -683,7 +711,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -695,7 +723,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tomaslinhart.SwiftGtkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -707,23 +734,24 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tomaslinhart.SwiftGtkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		78E163FE1B405BB3008A7CEC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		78E163FF1B405BB3008A7CEC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

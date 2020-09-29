@@ -14,7 +14,7 @@ open class Container: Widget {
     }
 
     public func remove(_ widget: Widget) {
-        if let index = widgets.index(where: { $0 === widget }) {
+        if let index = widgets.firstIndex(where: { $0 === widget }) {
             gtk_container_remove(castedPointer(), widget.widgetPointer)
             widgets.remove(at: index)
             widget.parentWidget = nil
