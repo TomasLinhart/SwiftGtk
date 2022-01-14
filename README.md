@@ -4,7 +4,7 @@ SwiftGtk is a experimental Gtk+ binding for Swift that tries to make usage of Gt
 
 ## Dependencies
 
-You need to have Swift 3.1 or higher installed on your computer (tested with 3.1.1 bundled with Xcode 8.3.3) and depending on your platform you need to install Gtk+3. On Mac OS X you can also build the project with Xcode.
+You need to have Swift 5.5 or higher installed on your computer, and depending on your platform you need to install Gtk+3. On Mac OS X you can also build the project with Xcode.
 
 ### Mac OS X
 
@@ -32,7 +32,7 @@ import PackageDescription
 let package = Package(
     name: "SwiftGtkApplication",
     dependencies: [
-        .Package(url: "https://github.com/TomasLinhart/SwiftGtk", Version(0, 3, 1))
+        .package(url: "https://github.com/TomasLinhart/SwiftGtk", from: "0.3.1"),
     ]
 )
 ```
