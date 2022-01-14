@@ -1,0 +1,17 @@
+module CGtk [system] {
+  header "/opt/homebrew/opt/gtk+3/include/gtk-3.0/gtk/gtk.h"
+
+  link "gailutil-3.0"
+  link "gdk-3.0"
+  link "gtk-3.0"
+  link "pango-1.0.0"
+  link "atk-1.0.0"
+  link "gdk_pixbuf-2.0.0"
+  link "gio-2.0.0"
+  link "glib-2.0.0"
+  link "gmodule-2.0.0"
+  link "gobject-2.0.0"
+  link "gthread-2.0.0"
+
+  export *
+}
